@@ -1,6 +1,12 @@
 .list {
-    display: flex;
+    background-color: blue;
     list-style: none;
+    position: absolute;
+    right: -10px;
+    padding: 5px;
+    display: none;
+    z-index: 1;
+
 }
 
 .link {
@@ -9,4 +15,14 @@
 
 .nav {
     padding: 10px;
+}
+.menu{
+    font-family: 'Material Icons';
+    position: absolute;
+    right: 0;
+
+}
+
+.menu:hover .list {
+ display: block;
 }
