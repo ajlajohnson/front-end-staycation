@@ -1,42 +1,41 @@
-<form #quizForm="ngForm">
+<form #quizForm="ngForm"  >
   <label for="city">Pick a City</label>
 
-  <input type="button" name="city" id="city" value="detroit" />
+  <input type="button" name="city" id="city" value="d" ngModel/>
 
-  <input type="button" name="city" id="city" value="grand rapids" />
+  <input type="button" name="city" id="city" value="gr" ngModel/>
 
   <label for="time">Time of Day</label>
 
   <select id="time" name="time">
-    <option value="morning">Morning</option>
-    <option value="afternoon">Afternoon</option>
-    <option value="night">Night</option>
-  </select>
+    <option value="1">Morning</option>
+    <option value="2">Afternoon</option>
+    <option value="3">Night</option>
+  </select ngModel> 
 
   <div>
     <label for="atmosphere">Casual</label>
-    <input type="radio" id="Casual" name="atmosphere" value="Casual">
+    <input type="radio" id="Casual" name="atmosphere" value="Casual" ngModel/>
     <label for="atmosphere">Buisness-Casual</label>
-    <input type="radio" id="Home" name="atmosphere" value="Home">
+    <input type="radio" id="Home" name="atmosphere" value="Home" ngModel/>
     <label for="atmosphere">Formal</label>
-    <input type="radio" id="formal" name="atmosphere" value="formal">
+    <input type="radio" id="formal" name="atmosphere" value="formal" ngModel/>
   </div>
 
   <div>
     <select id="kids" name="kids">
       <option value="kids">Kids</option>
-    </select>
+    </select ngModel>
   </div>
 
   <div>
-    <input type="checkbox" id="interest1" name="interest1" value="interest1">
+    <input type="checkbox" id="interest1" name="interest1" value="interest1" ngModel/>
     <label for="interest1">interest1</label>
-    <input type="checkbox" id="interest2" name="interest2" value="interest2">
+    <input type="checkbox" id="interest2" name="interest2" value="interest2" ngModel/>
     <label for="interest2">interest2</label>
-    <input type="checkbox" id="interest3" name="interest3" value="interest3">
+    <input type="checkbox" id="interest3" name="interest3" value="interest3" ngModel/>
     <label for="interest3"> interest3</label>
   </div>
 
   <button>submit</button>
-
 </form>

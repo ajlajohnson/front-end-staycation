@@ -19,13 +19,10 @@ import { AboutComponent } from './about/about.component';
     QuizFormComponent,
     ResultsComponent,
     NotFoundComponent,
-    AboutComponent
+    AboutComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule, HttpClientModule, FormsModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
