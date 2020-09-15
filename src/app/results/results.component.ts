@@ -13,6 +13,18 @@ export class ResultsComponent implements OnInit {
   @Input() info: any;
   restaurants: any = [];
 
+  // submissions: any = {}; //test
+
+
+  // getFullSubmission = () => {
+  //   this.submissions = this.service.getFullSubmission();
+  // }
+
+
+
+
+
+
 
   constructor(private service: DataService, private route: ActivatedRoute) { }
 
@@ -22,6 +34,7 @@ export class ResultsComponent implements OnInit {
       console.log(params.params);
       this.getRestaurants(params.params);
       this.getBars(params.params);
+      this.getActivities(params.params);
     })
   }
 
@@ -40,10 +53,16 @@ export class ResultsComponent implements OnInit {
 
   getBars = (params) => {
     this.service.getBars(params).subscribe((response) => {
-      console.log("Found Bars ", response);
+      console.log("Found Bars!!!!!!!! ", response);
     });
   }
 
+  getActivities = (params) => {
+    this.service.getActivities(params).subscribe((response) => {
+      console.log("These are activities###### ", response);
+      ///add if/else logic here
+    });
+  }
 
 
 

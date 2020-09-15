@@ -11,6 +11,7 @@ export class DataService {
   place_id: string = 'ChIJX80xAaIyO4gR8GDwgVUFi6I';
   restaurants: any = [];
 
+  // submissions: any;
 
   constructor(private http: HttpClient, private router: Router) { }
 
@@ -37,6 +38,23 @@ export class DataService {
     });
   };
 
+  getActivities = (params): any => {
+    return this.http.get(`${this.baseUrl}/activities`, {
+      params: params,
+    });
+  };
+
+
+
+  // getFullSubmission = () => {
+  //   return this.submissions;
+  // }
+
+
+  // calculateSubmission = (answers, questions) => {
+  //   console.log(answers);
+
+  // }
 
 
 

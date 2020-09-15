@@ -29,7 +29,6 @@ export class QuizFormComponent implements OnInit {
         interest: interestSelected
       }
     });
-
   }
 
   getInterests = (optionsObj: any) => {
