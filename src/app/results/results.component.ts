@@ -21,6 +21,7 @@ export class ResultsComponent implements OnInit {
     this.route.queryParamMap.subscribe((params: any) => {
       console.log(params.params);
       this.getRestaurants(params.params);
+      this.getBars(params.params);
     })
   }
 
@@ -36,9 +37,14 @@ export class ResultsComponent implements OnInit {
     });
   }
 
-  // filterRestaurants = () => {
-  //   this.restaurants.filter((restaurant)=> {
-  //     restaurant.city == 
-  //   });
+
+  getBars = (params) => {
+    this.service.getBars(params).subscribe((response) => {
+      console.log("Found Bars ", response);
+    });
+  }
+
+
+
 
 }

@@ -31,6 +31,12 @@ export class DataService {
   };
 
 
+  getBars = (params): any => {
+    return this.http.get(`${this.baseUrl}/bars`, {
+      params: params,
+    });
+  };
+
 
 
 

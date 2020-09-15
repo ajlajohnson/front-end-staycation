@@ -29,14 +29,17 @@
     </select>
   </div>
 
-  <div>
-    <input type="checkbox" id="interest1" name="interest1" value="interest1" ngModel />
-    <label for="interest1">interest1</label>
-    <input type="checkbox" id="interest2" name="interest2" value="interest2" ngModel />
-    <label for="interest2">interest2</label>
-    <input type="checkbox" id="interest3" name="interest3" value="interest3" ngModel />
-    <label for="interest3"> interest3</label>
-  </div>
+  <fieldset ngModelGroup="interests">
+    <input type="checkbox" id="bar" name="bar" value="bar" ngModel />
+    <label for="bar">Bar</label>
 
-  <button>submit</button>
+    <input type="checkbox" id="music" name="music" value="music" ngModel />
+    <label for="music">Music</label>
+
+    <input type="checkbox" id="comedy" name="comedy" value="comedy" ngModel />
+    <label for="comedy"> Comedy</label>
+
+  </fieldset>
+  <button>Submit</button>
+
 </form>

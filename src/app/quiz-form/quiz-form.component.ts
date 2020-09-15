@@ -18,15 +18,31 @@ export class QuizFormComponent implements OnInit {
   submit = (form: NgForm): any => {
     // this.add.emit(form.value);
     console.log(form.value);
+    console.log("this is interests *****", form.value.interests);
+    let interestSelected = this.getInterests(form.value.interests);
     this.router.navigate(['results'], {
       queryParams: {
         city: form.value.city,
         tod: form.value.time,
         atmosphere: form.value.atmosphere,
         kids: form.value.kids,
-        // interest: form.value
+        interest: interestSelected
       }
     });
+
+  }
+
+  getInterests = (optionsObj: any) => {
+    let checkedInterests: string[] = [];
+    for (const [key, value] of Object.entries(optionsObj)) {
+      // console.log(`${key}: ${value}`);
+      if (value) {
+        console.log(`pushed ${key}: ${value}`);
+        checkedInterests.push(key);
+      }
+    }
+    console.log(`checkedInterests ${checkedInterests}`);
+    return checkedInterests;
   }
 
 
