@@ -11,25 +11,31 @@ import { DataService } from '../data.service';
 export class QuizFormComponent implements OnInit {
   // @Output() add = new EventEmitter<any>();
 
-  constructor(private service: DataService, private router: Router) { }
+  constructor(private service: DataService, private router: Router) {}
 
-  ngOnInit(): void { }
+  ngOnInit(): void {}
 
   submit = (form: NgForm): any => {
     // this.add.emit(form.value);
     console.log(form.value);
-    console.log("this is interests *****", form.value.interests);
+    console.log('this is interests *****', form.value.interests);
+    let test = undefined;
+    if (form.value.kids === true) {
+      test = 1;
+    } else {
+      test = 0;
+    }
     let interestSelected = this.getInterests(form.value.interests);
     this.router.navigate(['results'], {
       queryParams: {
         city: form.value.city,
         tod: form.value.time,
         atmosphere: form.value.atmosphere,
-        kids: form.value.kids,
-        interest: interestSelected
-      }
+        kids: test,
+        interest: interestSelected,
+      },
     });
-  }
+  };
 
   getInterests = (optionsObj: any) => {
     let checkedInterests: string[] = [];
@@ -42,11 +48,5 @@ export class QuizFormComponent implements OnInit {
     }
     console.log(`checkedInterests ${checkedInterests}`);
     return checkedInterests;
-  }
-
-
-
-
-
-
+  };
 }
