@@ -19,15 +19,15 @@ export class ResultsComponent implements OnInit {
   //   this.submissions = this.service.getFullSubmission();
   // }
 
-  constructor(private service: DataService, private route: ActivatedRoute) {}
+  constructor(private service: DataService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.displayResults();
     this.route.queryParamMap.subscribe((params: any) => {
       console.log(params.params);
       this.getRestaurants(params.params);
-      // this.getBars(params.params);
-      // this.getActivities(params.params);
+      this.getBars(params.params);
+      this.getActivities(params.params);
     });
   }
 
@@ -51,8 +51,8 @@ export class ResultsComponent implements OnInit {
 
   getActivities = (params) => {
     this.service.getActivities(params).subscribe((response) => {
-      console.log('These are activities###### ', response);
-      ///add if/else logic here
+      console.log(response);
+
     });
   };
 }
