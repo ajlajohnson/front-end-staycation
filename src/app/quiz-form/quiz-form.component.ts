@@ -10,6 +10,8 @@ import { DataService } from '../data.service';
 })
 export class QuizFormComponent implements OnInit {
   // @Output() add = new EventEmitter<any>();
+  clicked: boolean = false;
+  clickedInterests: string[] = [];
 
   constructor(private service: DataService, private router: Router) {}
 
@@ -48,5 +50,22 @@ export class QuizFormComponent implements OnInit {
     }
     console.log(`checkedInterests ${checkedInterests}`);
     return checkedInterests;
+  };
+
+  toggleClicked = (interest: string) => {
+    if (this.clickedInterests.includes(interest)) {
+      let index = this.clickedInterests.findIndex((interest) => {
+        return interest === interest;
+      });
+      this.clickedInterests.splice(index, 1);
+      if (this.clickedInterests.length >= 1) {
+        this.clicked = true;
+      } else {
+        this.clicked = false;
+      }
+    } else {
+      this.clickedInterests.push(interest);
+      this.clicked = true;
+    }
   };
 }

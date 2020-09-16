@@ -35,10 +35,24 @@
   </div>
 
   <fieldset ngModelGroup="interests">
-    <input type="checkbox" id="bar" name="bar" value="bar" ngModel />
+    <input
+      type="checkbox"
+      id="bar"
+      name="bar"
+      value="bar"
+      ngModel
+      (click)="toggleClicked('bar')"
+    />
     <label for="bar">Bar</label>
 
-    <input type="checkbox" id="sports" name="sports" value="sports" ngModel />
+    <input
+      type="checkbox"
+      id="sports"
+      name="sports"
+      value="sports"
+      ngModel
+      (click)="toggleClicked('sports')"
+    />
     <label for="sports">Sports</label>
 
     <input
@@ -47,6 +61,7 @@
       name="nightlife"
       value="nightlife"
       ngModel
+      (click)="toggleClicked('nightlife')"
     />
     <label for="nightlife"> Nightlife </label>
 
@@ -56,6 +71,7 @@
       name="creative"
       value="creative"
       ngModel
+      (click)="toggleClicked('creative')"
     />
     <label for="creative"> Creative</label>
 
@@ -65,10 +81,18 @@
       name="education"
       value="education"
       ngModel
+      (click)="toggleClicked('education')"
     />
     <label for="education"> Education </label>
 
-    <input type="checkbox" id="comedy" name="comedy" value="comedy" ngModel />
+    <input
+      type="checkbox"
+      id="comedy"
+      name="comedy"
+      value="comedy"
+      ngModel
+      (click)="toggleClicked('comedy')"
+    />
     <label for="comedy"> Comedy</label>
 
     <input
@@ -77,11 +101,19 @@
       name="recreation"
       value="recreation"
       ngModel
+      (click)="toggleClicked('recreation')"
     />
     <label for="recreation"> Recreation</label>
 
-    <input type="checkbox" id="music" name="music" value="music" ngModel />
+    <input
+      type="checkbox"
+      id="music"
+      name="music"
+      value="music"
+      ngModel
+      (click)="toggleClicked('music')"
+    />
     <label for="music"> Music</label>
   </fieldset>
-  <button>Submit</button>
+  <button [disabled]="clicked === false">Submit</button>
 </form>
