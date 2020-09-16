@@ -5,12 +5,15 @@
 </section>
 <div>
     <ol>
-        <!-- <li *ngFor="let submission of submissions"> -->
-        <!-- <p>Restaurant: {{ submission.city.name}}</p> -->
-        <p>Activities:</p>
-        <p>Bar/Coffee:</p>
-        <!-- </li> -->
-
+        <li>
+            <p>Restaurant: {{ restaurant[0].name }}</p>
+            <p> address: {{ restaurantGoogle.result.formatted_address  }} </p>
+            <p>Activity 1: {{ activity[0].name }} </p>
+            <p>address: {{ activityGoogle.result.formatted_address  }}</p>
+            <p>Activity 2: {{ activity[1].name }} </p>
+            <p>address: {{ activityGoogle.result.formatted_address  }}</p>
+            <p>Bar or Coffee: {{ barOrCoffee[0].name }}</p>
+            <p>address: {{ activityGoogle.result.formatted_address  }}</p>
+        </li>
     </ol>
-
 </div>

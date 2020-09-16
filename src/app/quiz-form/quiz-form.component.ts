@@ -9,13 +9,12 @@ import { DataService } from '../data.service';
   styleUrls: ['./quiz-form.component.css'],
 })
 export class QuizFormComponent implements OnInit {
-  // @Output() add = new EventEmitter<any>();
   clicked: boolean = false;
   clickedInterests: string[] = [];
 
-  constructor(private service: DataService, private router: Router) {}
+  constructor(private service: DataService, private router: Router) { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
   submit = (form: NgForm): any => {
     // this.add.emit(form.value);
