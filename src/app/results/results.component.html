@@ -4,22 +4,31 @@
   <h1>Here are your recommendations:</h1>
 </section>
 <div>
-  <ol>
-    <li>
-      <p>Restaurant: {{ restaurant[0].name }}</p>
-      <p>address: {{ restaurantGoogle.result.formatted_address }}</p>
 
-      <div>
+  <div>
+    <p>Restaurant: {{ restaurant[0].name }}</p>
+    <p>address: {{ restaurantGoogle.result.formatted_address }}</p>
+    <button>ADD</button>
+  </div>
 
-        <p>Activity 1: {{ activityGoogle[0].result.name }}</p>
-        <p>address: {{ activityGoogle[0].result.formatted_address }}</p>
 
-        <p>Activity 2: {{ activityGoogle[1].result.name }}</p>
-        <p>address: {{ activityGoogle[1].result.formatted_address }}</p>
-      </div>
+  <div>
+    <p>Activity 1: {{ activityGoogle[0].result.name }}</p>
+    <p>address: {{ activityGoogle[0].result.formatted_address }}</p>
+    <button>ADD</button>
+  </div>
 
-      <p>Bar or Coffee: {{ barOrCoffee[0].name }}</p>
-      <p>address: {{ barOrCoffeeGoogle.result.formatted_address }}</p>
-    </li>
-  </ol>
+  <div>
+    <p>Activity 2: {{ activityGoogle[1].result.name }}</p>
+    <p>address: {{ activityGoogle[1].result.formatted_address }}</p>
+    <button>ADD</button>
+  </div>
+
+  <div>
+    <p>Bar or Coffee: {{ barOrCoffee[0].name }}</p>
+    <p>address: {{ barOrCoffeeGoogle.result.formatted_address }}</p>
+    <button>ADD</button>
+  </div>
+
+
 </div>

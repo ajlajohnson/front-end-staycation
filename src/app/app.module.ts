@@ -10,6 +10,7 @@ import { ResultsComponent } from './results/results.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { FormsModule } from '@angular/forms';
 import { AboutComponent } from './about/about.component';
+import { FavoritesComponent } from './favorites/favorites.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { AboutComponent } from './about/about.component';
     ResultsComponent,
     NotFoundComponent,
     AboutComponent,
+    FavoritesComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
