@@ -1,19 +1,19 @@
 <app-header></app-header>
 
 <section>
-    <h1>Here are your recommendations:</h1>
+  <h1>Here are your recommendations:</h1>
 </section>
 <div>
-    <ol>
-        <li>
-            <p>Restaurant: {{ restaurant[0].name }}</p>
-            <p> address: {{ restaurantGoogle.result.formatted_address  }} </p>
-            <p>Activity 1: {{ activity[0].name }} </p>
-            <p>address: {{ activityGoogle.result.formatted_address  }}</p>
-            <p>Activity 2: {{ activity[1].name }} </p>
-            <p>address: {{ activityGoogle.result.formatted_address  }}</p>
-            <p>Bar or Coffee: {{ barOrCoffee[0].name }}</p>
-            <p>address: {{ activityGoogle.result.formatted_address  }}</p>
-        </li>
-    </ol>
+  <ol>
+    <li>
+      <p>Restaurant: {{ restaurant[0].name }}</p>
+      <p>address: {{ restaurantGoogle.result.formatted_address }}</p>
+      <p>Activity 1: {{ activity.name }}</p>
+      <p>address: {{ activity.result.formatted_address }}</p>
+      <p>Activity 2: {{ activity.name }}</p>
+      <p>address: {{ activityGoogle.result.formatted_address }}</p>
+      <!-- <p>Bar or Coffee: {{ barOrCoffee[0].name }}</p>
+      <p>address: {{ barOrCoffeeGoogle[0].result.formatted_address }}</p>-->
+    </li>
+  </ol>
 </div>
