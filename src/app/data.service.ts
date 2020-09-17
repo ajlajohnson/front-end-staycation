@@ -44,18 +44,4 @@ export class DataService {
     });
   };
 
-
-
-  // getFullSubmission = () => {
-  //   return this.submissions;
-  // }
-
-
-  // calculateSubmission = (answers, questions) => {
-  //   console.log(answers);
-
-  // }
-
-
-
 }

@@ -17,7 +17,7 @@ export class ResultsComponent implements OnInit {
   restaurantGoogle: any;
   activityGoogle: any = [];
 
-  constructor(private service: DataService, private route: ActivatedRoute) {}
+  constructor(private service: DataService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.route.queryParamMap.subscribe((params: any) => {
@@ -87,12 +87,5 @@ export class ResultsComponent implements OnInit {
     });
   };
 
-  // getActivities = (params) => {
-  //   this.service.getActivities(params).subscribe((response) => {
-  //     console.log(response);
-  //     this.activity = response;
-  //     this.displayActivity(this.activityGoogle.place_id);
-  //     console.log(this.activity[0].place_id);
-  //   });
-  // };
+
 }
