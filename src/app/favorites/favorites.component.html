@@ -14,8 +14,6 @@
       <li *ngFor="let activity of favoriteAct">
         <p>Activity: {{ activity.name }}</p>
         <p>Activity Address: {{ activity.formatted_address }}</p>
-        <p>Activity: {{ activity.name }}</p>
-        <p>Activity Address: {{ activity.formatted_address }}</p>
         <button (click)="deleteAct(i)">X</button>
       </li>
     </ul>
