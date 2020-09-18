@@ -1,7 +1,10 @@
 <app-header></app-header>
 
 <div>
-    <h1>Here are your favorites places you saved!</h1>
-
-
+  <h1>Here are your favorites places you saved!</h1>
+  <ul>
+    <li *ngFor="let restaurant of selectRest">
+      <p>Restaurant: {{ restaurant[0].name }}</p>
+    </li>
+  </ul>
 </div>

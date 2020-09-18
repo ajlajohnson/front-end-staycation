@@ -1,22 +1,21 @@
-.list {
-    background-color: blue;
-    list-style: none;
-    position: absolute;
-    right: -10px;
-    padding: 5px;
-    display: none;
-    z-index: 1;
-
+/* .list {
+  background-color: blue;
+  list-style: none;
+  position: absolute;
+  right: -10px;
+  padding: 5px;
+  display: none;
+  z-index: 1;
 }
 
 .link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .nav {
-    padding: 10px;
+  padding: 10px;
 }
-.menu{
+/* .menu{
     font-family: 'Material Icons';
     position: absolute;
     right: 0;
@@ -25,4 +24,4 @@
 
 .menu:hover .list {
  display: block;
-}
+} */

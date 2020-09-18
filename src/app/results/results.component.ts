@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { DataService } from '../data.service';
 import { ActivatedRoute } from '@angular/router';
 import { analyzeFileForInjectables } from '@angular/compiler';
@@ -16,8 +16,9 @@ export class ResultsComponent implements OnInit {
   barOrCoffeeGoogle: any;
   restaurantGoogle: any;
   activityGoogle: any = [];
+  @Output() added = new EventEmitter<void>();
 
-  constructor(private service: DataService, private route: ActivatedRoute) { }
+  constructor(private service: DataService, private route: ActivatedRoute) {}
 
   ngOnInit(): void {
     this.route.queryParamMap.subscribe((params: any) => {
@@ -87,5 +88,13 @@ export class ResultsComponent implements OnInit {
     });
   };
 
-
+  addFavRest = (restaurant: any) => {
+    this.service.addFavoriteRestaurant(restaurant);
+  };
+  addFavAct = (activity: any) => {
+    this.service.addFavoriteActivities(activity);
+  };
+  addFavDrink = (drink: any) => {
+    this.service.addFavoriteDrinks(drink);
+  };
 }

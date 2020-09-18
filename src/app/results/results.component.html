@@ -4,31 +4,27 @@
   <h1>Here are your recommendations:</h1>
 </section>
 <div>
-
   <div>
     <p>Restaurant: {{ restaurant[0].name }}</p>
     <p>address: {{ restaurantGoogle.result.formatted_address }}</p>
-    <button>ADD</button>
+    <button (click)="addFavRest(restaurantGoogle.result)">ADD</button>
   </div>
-
 
   <div>
     <p>Activity 1: {{ activityGoogle[0].result.name }}</p>
     <p>address: {{ activityGoogle[0].result.formatted_address }}</p>
-    <button>ADD</button>
+    <button (click)="addFavAct(activityGoogle[0].result)">ADD</button>
   </div>
 
   <div>
     <p>Activity 2: {{ activityGoogle[1].result.name }}</p>
     <p>address: {{ activityGoogle[1].result.formatted_address }}</p>
-    <button>ADD</button>
+    <button (click)="addFavAct(activityGoogle[1].result)">ADD</button>
   </div>
 
   <div>
     <p>Bar or Coffee: {{ barOrCoffee[0].name }}</p>
     <p>address: {{ barOrCoffeeGoogle.result.formatted_address }}</p>
-    <button>ADD</button>
+    <button (click)="addFavDrink(barOrCoffeeGoogle.result)">ADD</button>
   </div>
-
-
 </div>
