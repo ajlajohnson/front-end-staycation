@@ -3,8 +3,30 @@
 <div>
   <h1>Here are your favorites places you saved!</h1>
   <ul>
-    <li *ngFor="let restaurant of selectRest">
-      <p>Restaurant: {{ restaurant[0].name }}</p>
+    <li *ngFor="let restaurant of favoriteRest; index as i">
+      <p>Restaurant: {{ restaurant.name }}</p>
+      <p>Restaurant Address: {{ restaurant.formatted_address }}</p>
+      <button (click)="deleteRest(i)">X</button>
     </li>
   </ul>
+  <div>
+    <ul>
+      <li *ngFor="let activity of favoriteAct">
+        <p>Activity: {{ activity.name }}</p>
+        <p>Activity Address: {{ activity.formatted_address }}</p>
+        <p>Activity: {{ activity.name }}</p>
+        <p>Activity Address: {{ activity.formatted_address }}</p>
+        <button (click)="deleteAct(i)">X</button>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <ul>
+      <li *ngFor="let drink of favoriteDrink">
+        <p>Bars and Coffee: {{ drink.name }}</p>
+        <p>Address: {{ drink.formatted_address }}</p>
+        <button (click)="deleteDrink(i)">X</button>
+      </li>
+    </ul>
+  </div>
 </div>

@@ -58,17 +58,24 @@ export class DataService {
   };
 
   addFavoriteRestaurant = (restaurant: any) => {
-    this.favoriteRest.unshift(restaurant);
+    if (!this.favoriteRest.includes(restaurant)) {
+      this.favoriteRest.unshift(restaurant);
+    }
     console.log(this.favoriteRest);
   };
 
   addFavoriteActivities = (activity: any) => {
-    this.favoriteAct.unshift(activity);
+    if (!this.favoriteAct.includes(activity)) {
+      this.favoriteAct.unshift(activity);
+    }
     console.log(this.favoriteAct);
   };
 
   addFavoriteDrinks = (drink: any) => {
-    this.favoriteDrink.unshift(drink);
+    if (!this.favoriteDrink.includes(drink)) {
+      this.favoriteDrink.unshift(drink);
+    }
+
     console.log(this.favoriteDrink);
   };
 
