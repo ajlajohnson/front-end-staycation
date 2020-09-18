@@ -45,4 +45,13 @@ export class FavoritesComponent implements OnInit {
   deleteDrink(index: number) {
     this.favoriteDrink.splice(index, 1);
   }
+  //   }
+  // duplicateRest = (index)=>{
+  //   let firstRest = this.favoriteRest[0];
+  //   this.favoriteRest.forEach((rest)=>{
+  //     if(rest.name === firstRest.name){
+  //       this.favoriteRest.splice(index,1)
+  //     }
+  //   })
+  // }
 }

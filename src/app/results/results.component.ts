@@ -92,9 +92,9 @@ export class ResultsComponent implements OnInit {
     this.service.addFavoriteRestaurant(restaurant);
   };
   addFavAct = (activity: any) => {
-    this.service.addFavoriteActivities(activity);
+    this.service.addFavoriteActivity(activity);
   };
   addFavDrink = (drink: any) => {
-    this.service.addFavoriteDrinks(drink);
+    this.service.addFavoriteDrink(drink);
   };
 }

@@ -56,28 +56,52 @@ export class DataService {
   getFaveDrinks = () => {
     return this.favoriteDrink;
   };
+  // addFavoriteRestaurant = (restaurant: any) => {
+  //   let index = this.favoriteRest.findIndex((favorite) => {
+  //     return favorite === restaurant;
+  //   });
+  //   if (index >= 0) {
+  //     this.favoriteRest.splice(index, 1);
+  //   } else {
+  //     this.favoriteRest.push(restaurant);
+  //   }
+  // };
 
   addFavoriteRestaurant = (restaurant: any) => {
-    if (!this.favoriteRest.includes(restaurant)) {
+    if (!this.checkDuplicateRest(restaurant)) {
       this.favoriteRest.unshift(restaurant);
     }
     console.log(this.favoriteRest);
   };
+  checkDuplicateRest(restaurant: any): boolean {
+    return this.favoriteRest.some((item) => {
+      return item.name === restaurant.name;
+    });
+  }
 
-  addFavoriteActivities = (activity: any) => {
-    if (!this.favoriteAct.includes(activity)) {
+  addFavoriteActivity = (activity: any) => {
+    if (!this.checkDuplicateAct(activity)) {
       this.favoriteAct.unshift(activity);
     }
     console.log(this.favoriteAct);
   };
+  checkDuplicateAct(activity: any): boolean {
+    return this.favoriteAct.some((item) => {
+      return item.name === activity.name;
+    });
+  }
 
-  addFavoriteDrinks = (drink: any) => {
-    if (!this.favoriteDrink.includes(drink)) {
+  addFavoriteDrink = (drink: any) => {
+    if (!this.checkDuplicateDrink(drink)) {
       this.favoriteDrink.unshift(drink);
     }
-
-    console.log(this.favoriteDrink);
+    console.log(this.favoriteRest);
   };
+  checkDuplicateDrink(drink: any): boolean {
+    return this.favoriteDrink.some((item) => {
+      return item.name === drink.name;
+    });
+  }
 
   // addFavoriteRestaurant = (restaurant: any) => {
   //   let index = this.favoriteRest.findIndex((favorite) => {
