@@ -12,9 +12,9 @@ export class QuizFormComponent implements OnInit {
   clicked: boolean = false;
   clickedInterests: string[] = [];
 
-  constructor(private service: DataService, private router: Router) { }
+  constructor(private service: DataService, private router: Router) {}
 
-  ngOnInit(): void { }
+  ngOnInit(): void {}
 
   submit = (form: NgForm): any => {
     // this.add.emit(form.value);

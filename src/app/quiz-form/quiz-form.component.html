@@ -1,20 +1,34 @@
 <form #quizForm="ngForm" (ngSubmit)="submit(quizForm)">
-  <label for="city">detroit</label>
+  <div>
+    <p><label for="city">City:</label></p>
 
-  <input type="radio" name="city" id="city" value="d" ngModel />
+    <label for="city">Detroit</label>
+    <input type="radio" name="city" id="city" value="d" ngModel />
 
-  <label for="city">GR</label>
-  <input type="radio" name="city" id="city" value="gr" ngModel />
+    <label for="city">Grand Rapids</label>
+    <input type="radio" name="city" id="city" value="gr" ngModel />
+  </div>
 
-  <label for="time">Time of Day</label>
+  <div>
+    <p><label for="time">Time of Day:</label></p>
 
-  <select id="time" name="time" ngModel>
+    <label for="time">Morning</label>
+    <input type="radio" name="time" id="time" value="1" ngModel />
+
+    <label for="time">Afternoon</label>
+    <input type="radio" name="time" id="time" value="2" ngModel />
+
+    <label for="time">Evening</label>
+    <input type="radio" name="time" id="time" value="3" ngModel />
+  </div>
+  <!-- <select id="time" name="time" ngModel>
     <option value="1">Morning</option>
     <option value="2">Afternoon</option>
     <option value="3">Night</option>
-  </select>
+  </select> -->
 
   <div>
+    <p><label for="atmosphere">Occasion:</label></p>
     <label for="atmosphere">Casual</label>
     <input type="radio" id="Casual" name="atmosphere" value="1" ngModel />
     <label for="atmosphere">Buisness-Casual</label>
@@ -29,91 +43,96 @@
     <input type="radio" id="formal" name="atmosphere" value="3" ngModel />
   </div>
 
-  <div>
+  <!-- <div>
     <label for="kids">Kids</label>
     <input type="checkbox" id="kids" name="kids" value="1" ngModel />
+  </div> -->
+  <div>
+    <fieldset ngModelGroup="interests">
+      <input
+        type="checkbox"
+        id="bar"
+        name="bar"
+        value="bar"
+        ngModel
+        (click)="toggleClicked('bar')"
+      />
+      <label for="bar">Bar</label>
+
+      <input
+        type="checkbox"
+        id="sports"
+        name="sports"
+        value="sports"
+        ngModel
+        (click)="toggleClicked('sports')"
+      />
+      <label for="sports">Sports</label>
+
+      <input
+        type="checkbox"
+        id="nightlife"
+        name="nightlife"
+        value="nightlife"
+        ngModel
+        (click)="toggleClicked('nightlife')"
+      />
+      <label for="nightlife"> Nightlife </label>
+
+      <input
+        type="checkbox"
+        id="creative"
+        name="creative"
+        value="creative"
+        ngModel
+        (click)="toggleClicked('creative')"
+      />
+      <label for="creative"> Creative</label>
+
+      <input
+        type="checkbox"
+        id="education"
+        name="education"
+        value="education"
+        ngModel
+        (click)="toggleClicked('education')"
+      />
+      <label for="education"> Education </label>
+
+      <input
+        type="checkbox"
+        id="comedy"
+        name="comedy"
+        value="comedy"
+        ngModel
+        (click)="toggleClicked('comedy')"
+      />
+      <label for="comedy"> Comedy</label>
+
+      <input
+        type="checkbox"
+        id="recreation"
+        name="recreation"
+        value="recreation"
+        ngModel
+        (click)="toggleClicked('recreation')"
+      />
+      <label for="recreation"> Recreation</label>
+
+      <input
+        type="checkbox"
+        id="music"
+        name="music"
+        value="music"
+        ngModel
+        (click)="toggleClicked('music')"
+      />
+      <label for="music"> Music</label>
+    </fieldset>
+    <p>
+      <label for="kids">Kid Friendly</label>
+      <input type="checkbox" id="kids" name="kids" value="1" ngModel />
+    </p>
+    <button [disabled]="clicked === false">Submit</button>
   </div>
-
-  <fieldset ngModelGroup="interests">
-    <input
-      type="checkbox"
-      id="bar"
-      name="bar"
-      value="bar"
-      ngModel
-      (click)="toggleClicked('bar')"
-    />
-    <label for="bar">Bar</label>
-
-    <input
-      type="checkbox"
-      id="sports"
-      name="sports"
-      value="sports"
-      ngModel
-      (click)="toggleClicked('sports')"
-    />
-    <label for="sports">Sports</label>
-
-    <input
-      type="checkbox"
-      id="nightlife"
-      name="nightlife"
-      value="nightlife"
-      ngModel
-      (click)="toggleClicked('nightlife')"
-    />
-    <label for="nightlife"> Nightlife </label>
-
-    <input
-      type="checkbox"
-      id="creative"
-      name="creative"
-      value="creative"
-      ngModel
-      (click)="toggleClicked('creative')"
-    />
-    <label for="creative"> Creative</label>
-
-    <input
-      type="checkbox"
-      id="education"
-      name="education"
-      value="education"
-      ngModel
-      (click)="toggleClicked('education')"
-    />
-    <label for="education"> Education </label>
-
-    <input
-      type="checkbox"
-      id="comedy"
-      name="comedy"
-      value="comedy"
-      ngModel
-      (click)="toggleClicked('comedy')"
-    />
-    <label for="comedy"> Comedy</label>
-
-    <input
-      type="checkbox"
-      id="recreation"
-      name="recreation"
-      value="recreation"
-      ngModel
-      (click)="toggleClicked('recreation')"
-    />
-    <label for="recreation"> Recreation</label>
-
-    <input
-      type="checkbox"
-      id="music"
-      name="music"
-      value="music"
-      ngModel
-      (click)="toggleClicked('music')"
-    />
-    <label for="music"> Music</label>
-  </fieldset>
-  <button [disabled]="clicked === false">Submit</button>
 </form>
