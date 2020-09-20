@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.question {
+  border: 1px solid black;
+}
+
+.clicked {
+  background-color: red;
+}
