@@ -1,0 +1,6 @@
+.result-background {
+  height: 100vh;
+  background-size: cover;
+  width: auto;
+  background-image: url("src/assets/staycation-images/results-background.jpg");
+}
