@@ -1,4 +1,4 @@
-/* .list {
+.list {
   background-color: blue;
   list-style: none;
   position: absolute;
@@ -15,7 +15,7 @@
 .nav {
   padding: 10px;
 }
-/* .menu{
+menu{
     font-family: 'Material Icons';
     position: absolute;
     right: 0;
@@ -24,4 +24,4 @@
 
 .menu:hover .list {
  display: block;
-} */
+}

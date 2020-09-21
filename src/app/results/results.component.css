@@ -1,6 +1,35 @@
 .result-background {
-  height: 100vh;
+  display:flex;
+  height: 100%;
   background-size: cover;
   width: auto;
   background-image: url("src/assets/staycation-images/results-background.jpg");
+}
+
+ .box {
+  background-image: linear-gradient(
+    rgba(252, 237, 211, 0.9),
+    rgba(172, 123, 125, 0.9));
+}
+
+.results {
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  background-image: linear-gradient(
+    rgba(252, 237, 211, 0.9),
+    rgba(172, 123, 125, 0.9)
+  );
+  border-radius: 15px;
+}
+
+.rec, p {
+  color: #440000;
+  list-style-type: none;
+  text-shadow: 1px 1px #237970;
+  font-size: 15px;
+}
+
+.restaurant, .activity1, .activity2, .barorcoffee {
+  border: 3px solid black;
 }
