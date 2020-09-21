@@ -1,95 +1,102 @@
-<div class="container">
-  <div class="question" *ngIf="show === 1">
-    <p>City:</p>
-    <div>
-      <button (click)="q1Method('d')">Detriot</button>
-      <button (click)="q1Method('gr')">Grand Rapids</button>
+<div class="background-image">
+  <div class="container">
+    <div class="question" *ngIf="show === 1">
+      <p>City:</p>
+      <div>
+        <button (click)="q1Method('d')" class="detriot-btn">
+          Detroit <img src="src/assets/staycation-images/detriot.png" alt="" />
+        </button>
+        <button (click)="q1Method('gr')" class="detriot-btn">
+          Grand Rapids
+          <img src="src/assets/staycation-images/grand-rapids.png" alt="" />
+        </button>
+      </div>
     </div>
-  </div>
-  <div class="question" *ngIf="show === 2">
-    <p>Time of Day:</p>
-    <div>
-      <button (click)="q2Method(1)">Morning</button>
-      <button (click)="q2Method(2)">Afternoon</button>
-      <button (click)="q2Method(3)">Night</button>
+    <div class="question" *ngIf="show === 2">
+      <p>Time of Day:</p>
+      <div>
+        <button (click)="q2Method(1)">Morning</button>
+        <button (click)="q2Method(2)">Afternoon</button>
+        <button (click)="q2Method(3)">Night</button>
+      </div>
     </div>
-  </div>
-  <div class="question" *ngIf="show === 3">
-    <p>Occasion</p>
-    <div>
-      <button (click)="q3Method(1)">Casual</button>
-      <button (click)="q3Method(2)">Buisness-Casual</button>
-      <button (click)="q3Method(3)">Formal</button>
+    <div class="question" *ngIf="show === 3">
+      <p>Occasion</p>
+      <div>
+        <button (click)="q3Method(1)">Casual</button>
+        <button (click)="q3Method(2)">Business-Casual</button>
+        <button (click)="q3Method(3)">Formal</button>
+      </div>
     </div>
-  </div>
-  <div class="question" *ngIf="show === 4">
-    <p>Interests</p>
-    <div>
-      <button
-        (click)="q4Method('bar')"
-        [ngClass]="{ clicked: checkInterest('bar') }"
-      >
-        Bar
-      </button>
-      <button
-        (click)="q4Method('sports')"
-        [ngClass]="{ clicked: checkInterest('sports') }"
-      >
-        Sports
-      </button>
-      <button
-        (click)="q4Method('nightlife')"
-        [ngClass]="{ clicked: checkInterest('nightlife') }"
-      >
-        Nightlife
-      </button>
-      <button
-        (click)="q4Method('creative')"
-        [ngClass]="{ clicked: checkInterest('creative') }"
-      >
-        Creative
-      </button>
-      <button
-        (click)="q4Method('education')"
-        [ngClass]="{ clicked: checkInterest('education') }"
-      >
-        Education
-      </button>
-      <button
-        (click)="q4Method('comedy')"
-        [ngClass]="{ clicked: checkInterest('comedy') }"
-      >
-        Comedy
-      </button>
-      <button
-        (click)="q4Method('recreation')"
-        [ngClass]="{ clicked: checkInterest('recreation') }"
-      >
-        Recreation
-      </button>
-      <button
-        (click)="q4Method('music')"
-        [ngClass]="{ clicked: checkInterest('music') }"
-      >
-        Music
+    <div class="question" *ngIf="show === 4">
+      <p>Interests</p>
+      <div>
+        <button
+          (click)="q4Method('bar')"
+          [ngClass]="{ clicked: checkInterest('bar') }"
+        >
+          Bar
+        </button>
+        <button
+          (click)="q4Method('sports')"
+          [ngClass]="{ clicked: checkInterest('sports') }"
+        >
+          Sports
+        </button>
+        <button
+          (click)="q4Method('nightlife')"
+          [ngClass]="{ clicked: checkInterest('nightlife') }"
+        >
+          Nightlife
+        </button>
+        <button
+          (click)="q4Method('creative')"
+          [ngClass]="{ clicked: checkInterest('creative') }"
+        >
+          Creative
+        </button>
+        <button
+          (click)="q4Method('education')"
+          [ngClass]="{ clicked: checkInterest('education') }"
+        >
+          Education
+        </button>
+        <button
+          (click)="q4Method('comedy')"
+          [ngClass]="{ clicked: checkInterest('comedy') }"
+        >
+          Comedy
+        </button>
+        <button
+          (click)="q4Method('recreation')"
+          [ngClass]="{ clicked: checkInterest('recreation') }"
+        >
+          Recreation
+        </button>
+        <button
+          (click)="q4Method('music')"
+          [ngClass]="{ clicked: checkInterest('music') }"
+        >
+          Music
+        </button>
+      </div>
+      <div>
+        <p>Kid friendly:</p>
+        <i
+          class="far fa-square"
+          *ngIf="kidFriendly === 0"
+          (click)="toggleCheck()"
+        ></i>
+        <i
+          class="far fa-check-square"
+          *ngIf="kidFriendly === 1"
+          (click)="toggleCheck()"
+        ></i>
+      </div>
+      <button (click)="submitQuiz()" [disabled]="clicked === false">
+        Submit
       </button>
     </div>
-    <div>
-      <p>Kid friendly:</p>
-      <i
-        class="far fa-square"
-        *ngIf="kidFriendly === 0"
-        (click)="toggleCheck()"
-      ></i>
-      <i
-        class="far fa-check-square"
-        *ngIf="kidFriendly === 1"
-        (click)="toggleCheck()"
-      ></i>
-    </div>
-    <button (click)="submitQuiz()" [disabled]="clicked === false">
-      Submit
-    </button>
   </div>
 </div>
 <!-- <form #quizForm="ngForm" (ngSubmit)="submit(quizForm)">
@@ -127,10 +134,10 @@
         <p><label for="atmosphere">Occasion:</label></p>
         <label for="atmosphere">Casual</label>
         <input type="radio" id="Casual" name="atmosphere" value="1" ngModel />
-        <label for="atmosphere">Buisness-Casual</label>
+        <label for="atmosphere">Business-Casual</label>
         <input
           type="radio"
-          id="Buisness-Casual"
+          id="Business-Casual"
           name="atmosphere"
           value="2"
           ngModel
