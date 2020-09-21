@@ -4,3 +4,11 @@ body {
   margin: 0;
   padding: 0;
 }
+
+* {
+  font-weight: 800;
+  font-family: 'Special Elite';
+  font-size: 15px;
+  letter-spacing: 4px;
+
+}
