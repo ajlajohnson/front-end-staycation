@@ -1,0 +1,45 @@
+.background-image {
+  height: 100vh;
+  background-size: cover;
+  width: auto;
+  background-image: url("src/assets/staycation-images/opening-background.jpg");
+  background-position: 50% 50%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 13%;
+}
+
+.question {
+  border: 1px solid black;
+  background-image: linear-gradient(
+    rgba(219, 195, 155, 0.9),
+    rgba(172, 123, 125, 0.9)
+  );
+  width: 600px;
+  height: 300px;
+  border-radius: 15px;
+}
+
+.clicked {
+  background-color: red;
+}
+
+.detriot-btn {
+  background: url(src/assets/staycation-images/detriot.png) no-repeat;
+  cursor: pointer;
+  border: none;
+  width: 100px;
+  height: 100px;
+}
+
+.gr-btn {
+  background: url(src/assets/staycation-images/grand-rapids.png) no-repeat;
+  cursor: pointer;
+  border: none;
+  width: 100px;
+  height: 100px;
+}

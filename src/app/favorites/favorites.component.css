@@ -1,0 +1,6 @@
+.fave-background {
+  height: 100vh;
+  background-size: cover;
+  width: auto;
+  background-image: url("src/assets/staycation-images/favorites-background.jpg");
+}
