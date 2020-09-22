@@ -34,7 +34,6 @@
   list-style-type: none;
   text-shadow: 1px 1px #237970;
   text-align: center;
-  
 }
 
 .detriot-btn {
@@ -53,7 +52,8 @@
   height: 100px;
 }
 
-button, p {
+button,
+p {
   padding: 10px;
   margin: 5px;
   border-top-style: hidden;
@@ -68,9 +68,9 @@ button, p {
 }
 
 .questions1 {
-display: flex;
-flex-direction: column;
-justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .timebtn {
@@ -82,5 +82,14 @@ justify-content: center;
 }
 
 .tod {
- text-align: center; 
+  text-align: center;
+}
+
+.comedy {
+  background: url(src/assets/staycation-images/interests/comedy.png) no-repeat;
+  cursor: pointer;
+  border: none;
+  width: 100px;
+  height: 200px;
+  image-rendering: crisp-edges;
 }

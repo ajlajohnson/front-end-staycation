@@ -31,35 +31,70 @@
     <div class="question" *ngIf="show === 4">
       <p>Interests</p>
       <div>
-        <button (click)="q4Method('bar')" [ngClass]="{ clicked: checkInterest('bar') }">
+        <button
+          (click)="q4Method('bar')"
+          [ngClass]="{ clicked: checkInterest('bar') }"
+          class="bar"
+        >
           Bar
         </button>
-        <button (click)="q4Method('sports')" [ngClass]="{ clicked: checkInterest('sports') }">
+        <button
+          (click)="q4Method('sports')"
+          [ngClass]="{ clicked: checkInterest('sports') }"
+        >
           Sports
         </button>
-        <button (click)="q4Method('nightlife')" [ngClass]="{ clicked: checkInterest('nightlife') }">
+        <button
+          (click)="q4Method('nightlife')"
+          [ngClass]="{ clicked: checkInterest('nightlife') }"
+        >
           Nightlife
         </button>
-        <button (click)="q4Method('creative')" [ngClass]="{ clicked: checkInterest('creative') }">
+        <button
+          (click)="q4Method('creative')"
+          [ngClass]="{ clicked: checkInterest('creative') }"
+        >
           Creative
         </button>
-        <button (click)="q4Method('education')" [ngClass]="{ clicked: checkInterest('education') }">
+        <button
+          (click)="q4Method('education')"
+          [ngClass]="{ clicked: checkInterest('education') }"
+        >
           Education
         </button>
-        <button (click)="q4Method('comedy')" [ngClass]="{ clicked: checkInterest('comedy') }">
+        <button
+          (click)="q4Method('comedy')"
+          [ngClass]="{ clicked: checkInterest('comedy') }"
+          class="comedy"
+        >
+          <img src="src/assets/staycation-images/interests/comedy.png" alt="" />
           Comedy
         </button>
-        <button (click)="q4Method('recreation')" [ngClass]="{ clicked: checkInterest('recreation') }">
+        <button
+          (click)="q4Method('recreation')"
+          [ngClass]="{ clicked: checkInterest('recreation') }"
+        >
           Recreation
         </button>
-        <button (click)="q4Method('music')" [ngClass]="{ clicked: checkInterest('music') }">
+        <button
+          (click)="q4Method('music')"
+          [ngClass]="{ clicked: checkInterest('music') }"
+        >
           Music
         </button>
       </div>
       <div>
         <p>Kid friendly:</p>
-        <i class="far fa-square" *ngIf="kidFriendly === 0" (click)="toggleCheck()"></i>
-        <i class="far fa-check-square" *ngIf="kidFriendly === 1" (click)="toggleCheck()"></i>
+        <i
+          class="far fa-square"
+          *ngIf="kidFriendly === 0"
+          (click)="toggleCheck()"
+        ></i>
+        <i
+          class="far fa-check-square"
+          *ngIf="kidFriendly === 1"
+          (click)="toggleCheck()"
+        ></i>
       </div>
       <button (click)="submitQuiz()" [disabled]="clicked === false">
         Submit
