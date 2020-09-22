@@ -74,8 +74,11 @@ justify-content: center;
 }
 
 .timebtn {
+  display: flex;
   flex-direction: column;
- justify-content: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 .tod {
