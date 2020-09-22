@@ -35,6 +35,9 @@
   text-shadow: 1px 1px #237970;
   text-align: center;
 }
+.city-q {
+  display: flex;
+}
 
 .detriot-btn {
   background: url(src/assets/staycation-images/detriot.png) no-repeat;
@@ -42,6 +45,7 @@
   border: none;
   width: 100px;
   height: 100px;
+  background-size: 100%;
 }
 
 .gr-btn {
@@ -50,6 +54,7 @@
   border: none;
   width: 100px;
   height: 100px;
+  background-size: 100%;
 }
 
 button,
@@ -85,11 +90,78 @@ p {
   text-align: center;
 }
 
-.comedy {
-  background: url(src/assets/staycation-images/interests/comedy.png) no-repeat;
+.bar {
+  background: url("src/assets/staycation-images/interests/bar.png") no-repeat;
   cursor: pointer;
   border: none;
-  width: 100px;
-  height: 200px;
-  image-rendering: crisp-edges;
+  width: 80px;
+  height: 80px;
+  background-size: 100%;
+}
+
+.sports {
+  background: url("src/assets/staycation-images/interests/sports.png") no-repeat;
+  cursor: pointer;
+  border: none;
+  width: 80px;
+  height: 80px;
+  background-size: 100%;
+}
+
+.nightlife {
+  background: url("src/assets/staycation-images/interests/nightlife.png")
+    no-repeat;
+  cursor: pointer;
+  border: none;
+  width: 80px;
+  height: 80px;
+  background-size: 100%;
+}
+
+.creative {
+  background: url("src/assets/staycation-images/interests/creative.png")
+    no-repeat;
+  cursor: pointer;
+  border: none;
+  width: 80px;
+  height: 80px;
+  background-size: 100%;
+}
+
+.education {
+  background: url("src/assets/staycation-images/interests/education.png")
+    no-repeat;
+  cursor: pointer;
+  border: none;
+  width: 80px;
+  height: 80px;
+  background-size: 100%;
+}
+
+.comedy {
+  background: url("src/assets/staycation-images/interests/comedy.png") no-repeat;
+  cursor: pointer;
+  border: none;
+  width: 80px;
+  height: 80px;
+  background-size: 100%;
+}
+
+.recreation {
+  background: url("src/assets/staycation-images/interests/recreation.png")
+    no-repeat;
+  cursor: pointer;
+  border: none;
+  width: 80px;
+  height: 80px;
+  background-size: 100%;
+}
+
+.music {
+  background: url("src/assets/staycation-images/interests/music.png") no-repeat;
+  cursor: pointer;
+  border: none;
+  width: 80px;
+  height: 80px;
+  background-size: 100%;
 }

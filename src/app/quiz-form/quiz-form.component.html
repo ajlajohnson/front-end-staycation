@@ -2,14 +2,19 @@
   <div class="container">
     <div class="question" *ngIf="show === 1">
       <p class="city">City:</p>
-      <div>
-        <button (click)="q1Method('d')" class="detriot-btn">
-          Detroit <img src="src/assets/staycation-images/detriot.png" alt="" />
-        </button>
-        <button (click)="q1Method('gr')" class="detriot-btn">
-          Grand Rapids
-          <img src="src/assets/staycation-images/grand-rapids.png" alt="" />
-        </button>
+      <div class="city-q">
+        <div>
+          <button (click)="q1Method('d')" class="detriot-btn">
+            <img src="src/assets/staycation-images/detriot.png" alt="" />
+          </button>
+          <p>Detroit</p>
+        </div>
+        <div>
+          <button (click)="q1Method('gr')" class="gr-btn">
+            <img src="src/assets/staycation-images/grand-rapids.png" alt="" />
+          </button>
+          <p>Grand Rapids</p>
+        </div>
       </div>
     </div>
     <div class="question questions1" *ngIf="show === 2">
@@ -34,54 +39,51 @@
         <button
           (click)="q4Method('bar')"
           [ngClass]="{ clicked: checkInterest('bar') }"
-          class="bar"
-        >
-          Bar
-        </button>
+          class="bar interests-btn"
+        ></button>
+        <p>Bar</p>
         <button
           (click)="q4Method('sports')"
           [ngClass]="{ clicked: checkInterest('sports') }"
-        >
-          Sports
-        </button>
+          class="sports interests-btn"
+        ></button>
+        <p>Sports</p>
         <button
           (click)="q4Method('nightlife')"
           [ngClass]="{ clicked: checkInterest('nightlife') }"
-        >
-          Nightlife
-        </button>
+          class="nightlife interests-btn"
+        ></button>
+        <p>Nightlife</p>
         <button
           (click)="q4Method('creative')"
           [ngClass]="{ clicked: checkInterest('creative') }"
-        >
-          Creative
-        </button>
+          class="creative interests-btn"
+        ></button>
+        <p>Creative</p>
         <button
           (click)="q4Method('education')"
           [ngClass]="{ clicked: checkInterest('education') }"
-        >
-          Education
-        </button>
+          class="education"
+        ></button>
+        <p>Education</p>
         <button
           (click)="q4Method('comedy')"
           [ngClass]="{ clicked: checkInterest('comedy') }"
-          class="comedy"
-        >
-          <img src="src/assets/staycation-images/interests/comedy.png" alt="" />
-          Comedy
-        </button>
+          class="comedy interests-btn"
+        ></button>
+        <p>Comedy</p>
         <button
           (click)="q4Method('recreation')"
           [ngClass]="{ clicked: checkInterest('recreation') }"
-        >
-          Recreation
-        </button>
+          class="recreation interests-btn"
+        ></button>
+        <p>Recreation</p>
         <button
           (click)="q4Method('music')"
           [ngClass]="{ clicked: checkInterest('music') }"
-        >
-          Music
-        </button>
+          class="music interests-btn"
+        ></button>
+        <p>Music</p>
       </div>
       <div>
         <p>Kid friendly:</p>
