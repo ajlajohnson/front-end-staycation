@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root',
 })
 export class DataService {
-  baseUrl: string = 'http://localhost:3000';
+  private readonly baseUrl = environment.apiBaseUrl;
   key: string = 'AIzaSyAx6C2ZoVVCy_9NNDpn4ZzzpSaFBd1FOT4';
   // place_id: string = 'ChIJX80xAaIyO4gR8GDwgVUFi6I';
   restaurants: any = [];
@@ -14,9 +15,10 @@ export class DataService {
   favoriteAct: any = [];
   favoriteDrink: any = [];
 
+
   // submissions: any;
 
-  constructor(private http: HttpClient, private router: Router) {}
+  constructor(private http: HttpClient, private router: Router) { }
 
   retrievePlace = (placeid: string) => {
     return this.http.get(`${this.baseUrl}/results`, {

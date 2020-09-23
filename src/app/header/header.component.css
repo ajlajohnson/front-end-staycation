@@ -1,9 +1,13 @@
-/* .header {
-  display: flex;
-  justify-content: space-between;
-} */
 .header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(
+      rgba(252, 237, 211, 0.4),
+      rgba(172, 123, 125, 0.4         )
+    )
+    no-repeat;
+  width: 100%;
   position: fixed;
 }
 .logo {
@@ -11,8 +15,30 @@
   background-size: 90%;
   width: 350px;
   height: 180px;
-  margin-left: 20px;
-  margin-top: 20px;
+  margin-left: 35px;
+  margin-top: 10px;
+  filter: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.5));
+}
+.fa-bars {
+  font-size: 30px;
+}
+.burger {
+  position: relative;
+  margin-top: 160px;
+}
+.nav-items {
+  list-style: none;
+}
+.nav {
+  position: absolute;
+  right: 6px;
+}
+.link {
+  text-align: right;
+}
+.nav .color {
+  color: black;
+  text-decoration: none;
 }
 .menu {
   width: 35px;
@@ -20,39 +46,53 @@
   background-color: black;
   margin-left: 10px;
 }
-.nav-items {
-  list-style: none;
-}
-
-/* menu {
-  font-family: "Material Icons";
-  position: absolute;
-  right: 0;
-} */
-
 @media only screen and (min-width: 768px) {
-  header {
+  /* header {
     display: flex;
     width: 95%;
     justify-content: space-between;
     align-items: center;
     position: fixed;
   }
-
   .nav-items {
+    list-style: none;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
   }
   .link {
     margin-top: 0;
     margin-left: 10px;
-  }
-  /* .menu-links {
-    display: none;
-  } */
-  /* .menu {
-    display: none;
   } */
 }
 @media only screen and (min-width: 992 px) {
+  .header {
+    display: flex;
+    position: fixed;
+  }
+  .logo {
+    background: url("src/assets/staycation-images/pink-stayca-logo.png")
+      no-repeat;
+    background-size: 90%;
+    width: 350px;
+    height: 180px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  
+  .menu {
+    width: 35px;
+    height: 2px;
+    background-color: black;
+    margin-left: 10px;
+  }
+  .nav-items {
+    list-style: none;
+  }
 }
+
+
+
+
+
+
+

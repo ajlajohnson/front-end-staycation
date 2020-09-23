@@ -2,36 +2,37 @@
 <div class="fave-background">
   <div class="main">
     <h1>Here are your favorites places you saved!</h1>
-    <div class="restaurant">
-      <ul>
-        <li *ngFor="let restaurant of favoriteRest; index as i">
-          <p>restaurant: {{ restaurant.name }}</p>
-          <p>{{ restaurant.formatted_address }}</p>
-          <p>rating: {{ restaurant.rating }}</p>
-
-          <button (click)="deleteRest(i)">X</button>
-        </li>
-      </ul>
-    </div>
-    <div class="activity">
-      <ul>
-        <li *ngFor="let activity of favoriteAct">
-          <p>activity: {{ activity.name }}</p>
-          <p>{{ activity.formatted_address }}</p>
-          <p>rating: {{ activity.rating }}</p>
-          <button (click)="deleteAct(i)">X</button>
-        </li>
-      </ul>
-    </div>
-    <div class="bar">
-      <ul>
-        <li *ngFor="let drink of favoriteDrink">
-          <p>bars and coffee: {{ drink.name }}</p>
-          <p>{{ drink.formatted_address }}</p>
-          <p>rating: {{ drink.rating }}</p>
-          <button (click)="deleteDrink(i)">X</button>
-        </li>
-      </ul>
+    <div class="fave-results">
+      <div class="restaurant card">
+        <ul>
+          <li *ngFor="let restaurant of favoriteRest; index as i">
+            <p>restaurant: {{ restaurant.name }}</p>
+            <p>{{ restaurant.formatted_address }}</p>
+            <p>rating: {{ restaurant.rating }}</p>
+            <button (click)="deleteRest(i)">X</button>
+          </li>
+        </ul>
+      </div>
+      <div class="activity card">
+        <ul>
+          <li *ngFor="let activity of favoriteAct">
+            <p>activity: {{ activity.name }}</p>
+            <p>{{ activity.formatted_address }}</p>
+            <p>rating: {{ activity.rating }}</p>
+            <button (click)="deleteAct(i)">X</button>
+          </li>
+        </ul>
+      </div>
+      <div class="bar card">
+        <ul>
+          <li *ngFor="let drink of favoriteDrink">
+            <p>bars and coffee: {{ drink.name }}</p>
+            <p>{{ drink.formatted_address }}</p>
+            <p>rating: {{ drink.rating }}</p>
+            <button (click)="deleteDrink(i)">X</button>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>
