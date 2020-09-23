@@ -3,13 +3,16 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
+  showMenu: boolean = false;
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
+  toggleMenu() {
+    this.showMenu = !this.showMenu;
   }
+  ngOnInit(): void {}
 
+  // toggleMenu = () => { menu = document.getElementByClassName(“menu”); menu.classList.toggle(“className”);}
 }

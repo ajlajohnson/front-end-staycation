@@ -1,14 +1,14 @@
 .result-background {
-  display:flex;
-  height: 100vh;
+  display: flex;
+  height: 100%;
   width: 100%;
   background-size: cover;
   width: auto;
   background-image: url("src/assets/staycation-images/results-background.jpg");
 }
 
- .box {
- text-align: center;
+.box {
+  text-align: center;
 }
 
 .results {
@@ -44,7 +44,7 @@ p {
   font-size: 15px;
 }
 
-.name{
+.name {
   flex-wrap: wrap;
   font-size: 20px;
   text-align: center;
@@ -53,12 +53,14 @@ p {
   text-shadow: 1px 1px #237970;
 }
 
-.restaurant, .activity1, .activity2, .barorcoffee {
+.restaurant,
+.activity1,
+.activity2,
+.barorcoffee {
   border: 3px solid black;
 }
 
 button {
-
   padding: 15px;
   margin: 5px;
   border-top-style: hidden;
@@ -69,4 +71,33 @@ button {
   color: #440000;
   list-style-type: none;
   text-shadow: 1px 1px #237970;
+}
+/* .list {
+  background-color: blue;
+  list-style: none;
+  right: -10px;
+  padding: 5px;
+  z-index: 1;
+} */
+
+/* .link {
+  text-decoration: none;
+}
+
+.nav {
+  padding: 10px;
+}
+menu {
+  font-family: "Material Icons";
+  position: absolute;
+  right: 0;
+} */
+
+/* .menu:hover .list {
+  display: block;
+}
+.results-page {
+  display: flex;
+} */
+@media only screen and (min-width: 768px) {
 }

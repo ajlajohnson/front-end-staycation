@@ -4,6 +4,7 @@
   width: auto;
   background-image: url("src/assets/staycation-images/opening-background.jpg");
   background-position: 50% 50%;
+  overflow-y: scroll;
 }
 
 .container {
@@ -11,17 +12,7 @@
   justify-content: center;
   align-content: center;
   padding-top: 13%;
-}
-
-.question {
-  border: 1px solid black;
-  background-image: linear-gradient(
-    rgba(219, 195, 155, 0.9),
-    rgba(172, 123, 125, 0.9)
-  );
-  width: 600px;
-  height: 400px;
-  border-radius: 15px;
+  overflow-y: scroll;
 }
 
 .clicked {
@@ -164,4 +155,51 @@ p {
   width: 80px;
   height: 80px;
   background-size: 100%;
+}
+.interest-btn {
+  flex: 1;
+}
+.atmosphere {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 768px) {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /* .question {
+    border: 1px solid black;
+    background-image: linear-gradient(
+      rgba(219, 195, 155, 0.9),
+      rgba(172, 123, 125, 0.9)
+    );
+    width: 600px;
+    height: 400px;
+    border-radius: 15px;
+    overflow-y: scroll;
+    margin-bottom: 100px;
+  } */
+  .list {
+    display: none;
+  }
+  .links {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .interest-btn {
+    flex: 1;
+  }
+  /* .empty {
+    width: 80px;
+    height: 80px;
+    background-size: 100%;
+  } */
 }

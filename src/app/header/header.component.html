@@ -1,8 +1,17 @@
-<button class="menu">menu</button>
+<header class="header">
+  <h1 class="logo"></h1>
+  <div></div>
 
-<ol class="list">
-  <li class="nav"><a routerLink="/home" class="link">Home</a></li>
-  <li class="nav"><a routerLink="/results" class="link">Results</a></li>
-  <li class="nav"><a routerLink="/about" class="link">About</a></li>
-  <li class="nav"><a routerLink="/favorites" class="link">Favorites</a></li>
-</ol>
+  <nav>
+    <ul class="nav-items" *ngIf="showMenu === true">
+      <li class="nav"><a routerLink="/home" class="link">Home</a></li>
+      <li class="nav"><a routerLink="/favorites" class="link">Favorites</a></li>
+      <li class="nav"><a routerLink="/about" class="link">About</a></li>
+    </ul>
+  </nav>
+  <div class="menu-links" (click)="toggleMenu()">
+    <h3 class="menu"></h3>
+    <h3 class="menu"></h3>
+    <h3 class="menu"></h3>
+  </div>
+</header>

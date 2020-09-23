@@ -1,27 +1,55 @@
-.list {
-  background-color: blue;
+/* .header {
+  display: flex;
+  justify-content: space-between;
+} */
+.header {
+  display: flex;
+}
+.logo {
+  background: url("src\assets\staycation-images\staycationlogo.svg") no-repeat;
+  width: 180px;
+  height: 90px;
+  flex: 1;
+}
+.menu {
+  width: 35px;
+  height: 2px;
+  background-color: black;
+  margin-left: 10px;
+}
+.nav-items {
   list-style: none;
+}
+
+/* menu {
+  font-family: "Material Icons";
   position: absolute;
-  right: -10px;
-  padding: 5px;
-  display: none;
-  z-index: 1;
-}
+  right: 0;
+} */
 
-.link {
-  text-decoration: none;
-}
+@media only screen and (min-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* position: fixed; */
+  }
 
-.nav {
-  padding: 10px;
+  .nav-items {
+    display: flex;
+    justify-content: space-between;
+  }
+  .link {
+    margin-top: 0;
+    margin-left: 10px;
+  }
+  /* .menu-links {
+    display: none;
+  } */
+  /* .menu {
+    display: none;
+  } */
 }
-menu{
-    font-family: 'Material Icons';
-    position: absolute;
-    right: 0;
-
-}
-
-.menu:hover .list {
- display: block;
+@media only screen and (min-width: 992 px) {
 }
