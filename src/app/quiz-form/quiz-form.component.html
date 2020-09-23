@@ -27,7 +27,7 @@
     </div>
     <div class="question" *ngIf="show === 3">
       <p>Occasion</p>
-      <div>
+      <div class="atmosphere">
         <button (click)="q3Method(1)">Casual</button>
         <button (click)="q3Method(2)">Business-Casual</button>
         <button (click)="q3Method(3)">Formal</button>
@@ -35,55 +35,72 @@
     </div>
     <div class="question" *ngIf="show === 4">
       <p>Interests</p>
-      <div>
-        <button
-          (click)="q4Method('bar')"
-          [ngClass]="{ clicked: checkInterest('bar') }"
-          class="bar interests-btn"
-        ></button>
-        <p>Bar</p>
-        <button
-          (click)="q4Method('sports')"
-          [ngClass]="{ clicked: checkInterest('sports') }"
-          class="sports interests-btn"
-        ></button>
-        <p>Sports</p>
-        <button
-          (click)="q4Method('nightlife')"
-          [ngClass]="{ clicked: checkInterest('nightlife') }"
-          class="nightlife interests-btn"
-        ></button>
-        <p>Nightlife</p>
-        <button
-          (click)="q4Method('creative')"
-          [ngClass]="{ clicked: checkInterest('creative') }"
-          class="creative interests-btn"
-        ></button>
-        <p>Creative</p>
-        <button
-          (click)="q4Method('education')"
-          [ngClass]="{ clicked: checkInterest('education') }"
-          class="education"
-        ></button>
-        <p>Education</p>
-        <button
-          (click)="q4Method('comedy')"
-          [ngClass]="{ clicked: checkInterest('comedy') }"
-          class="comedy interests-btn"
-        ></button>
-        <p>Comedy</p>
-        <button
-          (click)="q4Method('recreation')"
-          [ngClass]="{ clicked: checkInterest('recreation') }"
-          class="recreation interests-btn"
-        ></button>
-        <p>Recreation</p>
-        <button
-          (click)="q4Method('music')"
-          [ngClass]="{ clicked: checkInterest('music') }"
-          class="music interests-btn"
-        ></button>
-        <p>Music</p>
+      <div class="grid">
+        <div>
+          <button
+            (click)="q4Method('bar')"
+            [ngClass]="{ clicked: checkInterest('bar') }"
+            class="bar interests-btn"
+          ></button>
+          <p>Bar</p>
+        </div>
+        <div>
+          <button
+            (click)="q4Method('sports')"
+            [ngClass]="{ clicked: checkInterest('sports') }"
+            class="sports interests-btn"
+          ></button>
+          <p>Sports</p>
+        </div>
+        <div>
+          <button
+            (click)="q4Method('nightlife')"
+            [ngClass]="{ clicked: checkInterest('nightlife') }"
+            class="nightlife interests-btn"
+          ></button>
+          <p>Nightlife</p>
+        </div>
+        <div>
+          <button
+            (click)="q4Method('creative')"
+            [ngClass]="{ clicked: checkInterest('creative') }"
+            class="creative interests-btn"
+          ></button>
+          <p>Creative</p>
+        </div>
+        <div>
+          <button
+            (click)="q4Method('education')"
+            [ngClass]="{ clicked: checkInterest('education') }"
+            class="education"
+          ></button>
+          <p>Education</p>
+        </div>
+        <div>
+          <button
+            (click)="q4Method('comedy')"
+            [ngClass]="{ clicked: checkInterest('comedy') }"
+            class="comedy interests-btn"
+          ></button>
+          <p>Comedy</p>
+        </div>
+        <div>
+          <button
+            (click)="q4Method('recreation')"
+            [ngClass]="{ clicked: checkInterest('recreation') }"
+            class="recreation interests-btn"
+          ></button>
+          <p>Recreation</p>
+        </div>
+        <!-- <div class="empty interests-btn"></div> -->
+        <div>
+          <button
+            (click)="q4Method('music')"
+            [ngClass]="{ clicked: checkInterest('music') }"
+            class="music interests-btn"
+          ></button>
+          <p>Music</p>
+        </div>
       </div>
       <div>
         <p>Kid friendly:</p>
