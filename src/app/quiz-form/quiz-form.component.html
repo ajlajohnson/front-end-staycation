@@ -42,7 +42,7 @@
             [ngClass]="{ clicked: checkInterest('bar') }"
             class="bar interests-btn"
           ></button>
-          <p>Bar</p>
+          <p [ngClass]="{ highlight: checkInterest('bar') }">Bar</p>
         </div>
         <div>
           <button
@@ -50,7 +50,7 @@
             [ngClass]="{ clicked: checkInterest('sports') }"
             class="sports interests-btn"
           ></button>
-          <p>Sports</p>
+          <p [ngClass]="{ highlight: checkInterest('sports') }">Sports</p>
         </div>
         <div>
           <button
@@ -58,7 +58,7 @@
             [ngClass]="{ clicked: checkInterest('nightlife') }"
             class="nightlife interests-btn"
           ></button>
-          <p>Nightlife</p>
+          <p [ngClass]="{ highlight: checkInterest('nightlife') }">Nightlife</p>
         </div>
         <div>
           <button
@@ -66,7 +66,7 @@
             [ngClass]="{ clicked: checkInterest('creative') }"
             class="creative interests-btn"
           ></button>
-          <p>Creative</p>
+          <p [ngClass]="{ highlight: checkInterest('creative') }">Creative</p>
         </div>
         <div>
           <button
@@ -74,7 +74,7 @@
             [ngClass]="{ clicked: checkInterest('education') }"
             class="education"
           ></button>
-          <p>Education</p>
+          <p [ngClass]="{ highlight: checkInterest('education') }">Education</p>
         </div>
         <div>
           <button
@@ -82,7 +82,7 @@
             [ngClass]="{ clicked: checkInterest('comedy') }"
             class="comedy interests-btn"
           ></button>
-          <p>Comedy</p>
+          <p [ngClass]="{ highlight: checkInterest('comedy') }">Comedy</p>
         </div>
         <div>
           <button
@@ -90,7 +90,9 @@
             [ngClass]="{ clicked: checkInterest('recreation') }"
             class="recreation interests-btn"
           ></button>
-          <p>Recreation</p>
+          <p [ngClass]="{ highlight: checkInterest('recreation') }">
+            Recreation
+          </p>
         </div>
         <!-- <div class="empty interests-btn"></div> -->
         <div>
@@ -99,7 +101,7 @@
             [ngClass]="{ clicked: checkInterest('music') }"
             class="music interests-btn"
           ></button>
-          <p>Music</p>
+          <p [ngClass]="{ highlight: checkInterest('music') }">Music</p>
         </div>
       </div>
       <div>
