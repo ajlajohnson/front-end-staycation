@@ -10,42 +10,51 @@
       <li class="nav"><a routerLink="/favorites" class="link">Favorites</a></li>
     </ol>
   </div> -->
-
+<app-header></app-header>
 <div class="results-page result-background">
-  <app-header></app-header>
   <div class="results">
     <h1 class="rec">|| Your Recommendations ||</h1>
-    <div class="restaurant box">
-      <p class="title">restaurant:</p>
-      <p class="name">{{ restaurant[0].name }}</p>
-      <p>{{ restaurantGoogle.result.formatted_address }}</p>
-      <p>{{ restaurantGoogle.result.formatted_phone_number }}</p>
-      <p>rating: {{ restaurantGoogle.result.rating }}/5</p>
-      <button (click)="addFavRest(restaurantGoogle.result)">ADD</button>
-    </div>
-    <div class="activity1 box">
-      <p class="title">first activity:</p>
-      <p class="name">{{ activityGoogle[0].result.name }}</p>
-      <p>{{ activityGoogle[0].result.formatted_address }}</p>
-      <p>{{ activityGoogle[0].result.formatted_phone_number }}</p>
-      <p>rating: {{ activityGoogle[0].result.rating }}/5</p>
-      <button (click)="addFavAct(activityGoogle[0].result)">ADD</button>
-    </div>
-    <div class="activity2 box">
-      <p class="title">second activity:</p>
-      <p class="name">{{ activityGoogle[1].result.name }}</p>
-      <p>{{ activityGoogle[1].result.formatted_address }}</p>
-      <p>{{ activityGoogle[0].result.formatted_phone_number }}</p>
-      <p>rating: {{ activityGoogle[0].result.rating }}/5</p>
-      <button (click)="addFavAct(activityGoogle[1].result)">ADD</button>
-    </div>
-    <div class="barorcoffee box">
-      <p class="title">bar or coffee:</p>
-      <p class="name">{{ barOrCoffee[0].name }}</p>
-      <p>{{ barOrCoffeeGoogle.result.formatted_address }}</p>
-      <p>{{ barOrCoffeeGoogle.result.formatted_phone_number }}</p>
-      <p>rating: {{ barOrCoffeeGoogle.result.rating }}/5</p>
-      <button (click)="addFavDrink(barOrCoffeeGoogle.result)">ADD</button>
+    <div class="grid">
+      <div class="restaurant box">
+        <p class="title">restaurant:</p>
+        <p class="name">{{ restaurant[0].name }}</p>
+        <p>{{ restaurantGoogle.result.formatted_address }}</p>
+        <p>{{ restaurantGoogle.result.formatted_phone_number }}</p>
+        <p>rating: {{ restaurantGoogle.result.rating }}/5</p>
+        <button (click)="addFavRest(restaurantGoogle.result)" class="heart">
+          <img src="src/assets/staycation-images/favorite.png" alt="" />
+        </button>
+      </div>
+      <div class="activity1 box">
+        <p class="title">first activity:</p>
+        <p class="name">{{ activityGoogle[0].result.name }}</p>
+        <p>{{ activityGoogle[0].result.formatted_address }}</p>
+        <p>{{ activityGoogle[0].result.formatted_phone_number }}</p>
+        <p>rating: {{ activityGoogle[0].result.rating }}/5</p>
+        <button (click)="addFavAct(activityGoogle[0].result)" class="heart">
+          <img src="src/assets/staycation-images/favorite.png" alt="" />
+        </button>
+      </div>
+      <div class="activity2 box">
+        <p class="title">second activity:</p>
+        <p class="name">{{ activityGoogle[1].result.name }}</p>
+        <p>{{ activityGoogle[1].result.formatted_address }}</p>
+        <p>{{ activityGoogle[0].result.formatted_phone_number }}</p>
+        <p>rating: {{ activityGoogle[0].result.rating }}/5</p>
+        <button (click)="addFavAct(activityGoogle[1].result)" class="heart">
+          <img src="src/assets/staycation-images/favorite.png" alt="" />
+        </button>
+      </div>
+      <div class="barorcoffee box">
+        <p class="title">bar or coffee:</p>
+        <p class="name">{{ barOrCoffee[0].name }}</p>
+        <p>{{ barOrCoffeeGoogle.result.formatted_address }}</p>
+        <p>{{ barOrCoffeeGoogle.result.formatted_phone_number }}</p>
+        <p>rating: {{ barOrCoffeeGoogle.result.rating }}/5</p>
+        <button (click)="addFavDrink(barOrCoffeeGoogle.result)" class="heart">
+          <img src="src/assets/staycation-images/favorite.png" alt="" />
+        </button>
+      </div>
     </div>
   </div>
 </div>

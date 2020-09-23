@@ -4,12 +4,15 @@
 } */
 .header {
   display: flex;
+  position: fixed;
 }
 .logo {
-  background: url("src\assets\staycation-images\staycationlogo.svg") no-repeat;
-  width: 180px;
-  height: 90px;
-  flex: 1;
+  background: url("src/assets/staycation-images/pink-stayca-logo.png") no-repeat;
+  background-size: 90%;
+  width: 350px;
+  height: 180px;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 .menu {
   width: 35px;
@@ -30,10 +33,10 @@
 @media only screen and (min-width: 768px) {
   header {
     display: flex;
-    flex-direction: row;
+    width: 95%;
     justify-content: space-between;
     align-items: center;
-    /* position: fixed; */
+    position: fixed;
   }
 
   .nav-items {
