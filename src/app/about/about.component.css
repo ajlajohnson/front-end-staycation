@@ -31,7 +31,6 @@
 .grid {
   display: flex;
   align-items: center;
-  /* flex-wrap: wrap; */
   flex-direction:column;
   justify-content: space-around;
 }
@@ -110,8 +109,12 @@
   background-size: 100%;
 } 
 
+
+
+
+
 @media only screen and (min-width: 768px) {
-  .about-background {
+  /* .about-background {
     display: flex;
     justify-content: center;
     height: 100%;
@@ -120,16 +123,124 @@
     background-image: url("src/assets/staycation-images/about-background.jpg");
   }
   
-  .grid, .description, .link, .name, .about, .erin, .ajla, .bryan, .stephanie {
+  .grid, .description, .link, .name, .about{
     display: flex;
     flex-wrap: wrap;
 
   }
   .photo {
-    width: 300px;
-    height: 300px;
-    margin: 0;
-  }
+    /* width: 300px;
+    height: 300px; */
+
+
+    
+    .about-background {
+      display: flex;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+      background-size: cover;
+      background-image: url("src/assets/staycation-images/about-background.jpg");
+    }
+    
+    .about-div {
+      
+      margin-top: 7%;
+      margin-bottom: 4.55%;
+      padding-bottom: 2%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid black; 
+      background-image: linear-gradient(
+        rgba(252, 237, 211, 0.9),
+        rgba(172, 123, 125, 0.9)
+      );
+      border-radius: 15px;
+      width: 43%;
+    }
+    
+    .grid {
+      display: flex;
+      align-items: center;
+      flex-direction:column;
+      justify-content: space-around;
+    }
+    
+    .creator{
+      text-align: center;
+      flex: 0 1 45%;
+      height: 45%;
+    }
+    
+    .link {
+      text-decoration: none;
+      color: #440000;
+      list-style-type: none;
+      text-shadow: 1px 1px #237970;
+      font-size: 25px;
+      padding: 10px;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .name {
+      justify-content: row;
+      text-decoration: none;
+      color: #237970;
+      list-style-type: none;
+      text-shadow: 1px 1px #440000;
+      font-size: 35px;
+    }
+    
+    .about {
+      justify-content: row;
+      text-decoration: none;
+      color: #237970;
+      list-style-type: none;
+      text-shadow: 1px 1px #440000;
+      font-size: 40px;
+      text-align: center;
+    }
+    
+    .description {
+      justify-content: row;
+      text-decoration: none;
+      color: #440000;
+      list-style-type: none;
+      text-shadow: 1px 1px #237970;
+      font-size: 17px;
+      text-align: center;
+      padding: 10px;
+    }
+    
+    .photo {
+      width: 300px;
+      height: 300px;
+      background-size: auto;
+    }
+    
+    .erin {
+      background: url(src/assets/staycation-images/erin.png) no-repeat;
+     background-size: 100%;
+    }
+    
+    .ajla {
+      background: url(src/assets/staycation-images/ajla.png) no-repeat;
+      background-size: 100%;
+    }
+    
+    .bryan {
+      background: url(src/assets/staycation-images/bryan.png) no-repeat;
+      background-size: 100%;
+    }
+    
+    .stephanie {
+      background: url(src/assets/staycation-images/stephanie.png) no-repeat;
+      background-size: 100%;
+    } 
+  
 
   .creator{
     text-align: center;
@@ -192,13 +303,13 @@
   align-items: center;
   justify-content: center;
   width : 50%;
-}
+} 
 
 
   }
 
   @media only screen and (min-width: 992px) {
-    .about-background {
+      /* .about-background {
       display: flex;
       justify-content: center;
       height: 100%;
@@ -224,7 +335,7 @@
 
     .photo {
     width: 300px;
-    height: 300px;
+    height: 300px; 
     margin: 0;
     }
 
@@ -274,6 +385,115 @@
   align-items: center;
   justify-content: center;
   width : 50%;
+}  */
+
+
+.about-background {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-image: url("src/assets/staycation-images/about-background.jpg") no-repeat;
 }
+
+.about-div {
+  
+  margin-top: 7%;
+  margin-bottom: 4.55%;
+  padding-bottom: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  background-image: linear-gradient(
+    rgba(252, 237, 211, 0.9),
+    rgba(172, 123, 125, 0.9)
+  );
+  border-radius: 15px;
+  width: 43%;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  flex-direction:column;
+  justify-content: space-around;
+}
+
+.creator{
+  text-align: center;
+  flex: 0 1 45%;
+  height: 45%;
+}
+
+.link {
+  text-decoration: none;
+  color: #440000;
+  list-style-type: none;
+  text-shadow: 1px 1px #237970;
+  font-size: 25px;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.name {
+  justify-content: row;
+  text-decoration: none;
+  color: #237970;
+  list-style-type: none;
+  text-shadow: 1px 1px #440000;
+  font-size: 35px;
+}
+
+.about {
+  justify-content: row;
+  text-decoration: none;
+  color: #237970;
+  list-style-type: none;
+  text-shadow: 1px 1px #440000;
+  font-size: 40px;
+  text-align: center;
+}
+
+.description {
+  justify-content: row;
+  text-decoration: none;
+  color: #440000;
+  list-style-type: none;
+  text-shadow: 1px 1px #237970;
+  font-size: 17px;
+  text-align: center;
+  padding: 10px;
+}
+
+.photo {
+  width: 300px;
+  height: 300px;
+  background-size: auto;
+}
+
+.erin {
+  background: url(src/assets/staycation-images/erin.png) no-repeat;
+ background-size: 100%;
+}
+
+.ajla {
+  background: url(src/assets/staycation-images/ajla.png) no-repeat;
+  background-size: 100%;
+}
+
+.bryan {
+  background: url(src/assets/staycation-images/bryan.png) no-repeat;
+  background-size: 100%;
+}
+
+.stephanie {
+  background: url(src/assets/staycation-images/stephanie.png) no-repeat;
+  background-size: 100%;
+} 
+
 
   } 
