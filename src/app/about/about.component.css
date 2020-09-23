@@ -1,10 +1,120 @@
 .about-background {
-  height: 100vh;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
   background-size: cover;
-  width: auto;
   background-image: url("src/assets/staycation-images/about-background.jpg");
 }
 
-/* .creator {
-  border: 2px black solid;
-} */
+.about-div {
+  margin-top: 7%;
+  margin-bottom: 4.55%;
+  padding-bottom: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  background-image: linear-gradient(
+    rgba(252, 237, 211, 0.9),
+    rgba(172, 123, 125, 0.9)
+  );
+  border-radius: 15px;
+  width: 43%;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.creator{
+  text-align: center;
+  flex: 0 1 45%;
+  height: 45%;
+}
+
+.link {
+  text-decoration: none;
+  color: #440000;
+  list-style-type: none;
+  text-shadow: 1px 1px #237970;
+  font-size: 25px;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+justify-content: center;
+}
+
+.name {
+  justify-content: row;
+  text-decoration: none;
+  color: #237970;
+  list-style-type: none;
+  text-shadow: 1px 1px #440000;
+  font-size: 35px;
+}
+
+.about {
+  justify-content: row;
+  text-decoration: none;
+  color: #237970;
+  list-style-type: none;
+  text-shadow: 1px 1px #440000;
+  font-size: 40px;
+  text-align: center;
+}
+
+.description {
+  justify-content: row;
+  text-decoration: none;
+  color: #440000;
+  list-style-type: none;
+  text-shadow: 1px 1px #237970;
+  font-size: 17px;
+  text-align: center;
+  padding: 10px;
+}
+
+.photo {
+  width: 300px;
+  height: 300px;
+}
+
+.erin {
+  background: url(src/assets/staycation-images/erin.png) no-repeat;
+ background-size: 100%;
+}
+
+.ajla {
+  background: url(src/assets/staycation-images/ajla.png) no-repeat;
+  background-size: 100%;
+}
+
+.bryan {
+  background: url(src/assets/staycation-images/bryan.png) no-repeat;
+  background-size: 100%;
+}
+
+.stephanie {
+  background: url(src/assets/staycation-images/stephanie.png) no-repeat;
+  background-size: 100%;
+} 
+
+@media only screen and (min-width: 768px) {
+  .grid, .photo, .description, .link, .name, .about, .erin, .ajla, .bryan, .stephanie {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  }
+
+  @media only screen and (min-width: 992px) {
+    .grid, .photo, .description, .link, .name, .about{
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+  } 
