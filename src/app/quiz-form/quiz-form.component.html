@@ -7,13 +7,13 @@
           <button (click)="q1Method('d')" class="detriot-btn">
             <img src="src/assets/staycation-images/detriot.png" alt="" />
           </button>
-          <p>Detroit</p>
+          <p class="detroit">Detroit</p>
         </div>
         <div>
           <button (click)="q1Method('gr')" class="gr-btn">
             <img src="src/assets/staycation-images/grand-rapids.png" alt="" />
           </button>
-          <p>Grand Rapids</p>
+          <p class="grand-rapids">Grand Rapids</p>
         </div>
       </div>
     </div>
@@ -37,83 +37,53 @@
       <p>Interests</p>
       <div class="grid">
         <div>
-          <button
-            (click)="q4Method('bar')"
-            [ngClass]="{ clicked: checkInterest('bar') }"
-            class="bar interests-btn"
-          ></button>
-          <p>Bar</p>
+          <button (click)="q4Method('bar')" [ngClass]="{ clicked: checkInterest('bar') }"
+            class="bar interests-btn"></button>
+          <p [ngClass]="{ highlight: checkInterest('bar') }">Bar</p>
         </div>
         <div>
-          <button
-            (click)="q4Method('sports')"
-            [ngClass]="{ clicked: checkInterest('sports') }"
-            class="sports interests-btn"
-          ></button>
-          <p>Sports</p>
+          <button (click)="q4Method('sports')" [ngClass]="{ clicked: checkInterest('sports') }"
+            class="sports interests-btn"></button>
+          <p [ngClass]="{ highlight: checkInterest('sports') }">Sports</p>
         </div>
         <div>
-          <button
-            (click)="q4Method('nightlife')"
-            [ngClass]="{ clicked: checkInterest('nightlife') }"
-            class="nightlife interests-btn"
-          ></button>
-          <p>Nightlife</p>
+          <button (click)="q4Method('nightlife')" [ngClass]="{ clicked: checkInterest('nightlife') }"
+            class="nightlife interests-btn"></button>
+          <p [ngClass]="{ highlight: checkInterest('nightlife') }">Nightlife</p>
         </div>
         <div>
-          <button
-            (click)="q4Method('creative')"
-            [ngClass]="{ clicked: checkInterest('creative') }"
-            class="creative interests-btn"
-          ></button>
-          <p>Creative</p>
+          <button (click)="q4Method('creative')" [ngClass]="{ clicked: checkInterest('creative') }"
+            class="creative interests-btn"></button>
+          <p [ngClass]="{ highlight: checkInterest('creative') }">Creative</p>
         </div>
         <div>
-          <button
-            (click)="q4Method('education')"
-            [ngClass]="{ clicked: checkInterest('education') }"
-            class="education"
-          ></button>
-          <p>Education</p>
+          <button (click)="q4Method('education')" [ngClass]="{ clicked: checkInterest('education') }"
+            class="education"></button>
+          <p [ngClass]="{ highlight: checkInterest('education') }">Education</p>
         </div>
         <div>
-          <button
-            (click)="q4Method('comedy')"
-            [ngClass]="{ clicked: checkInterest('comedy') }"
-            class="comedy interests-btn"
-          ></button>
-          <p>Comedy</p>
+          <button (click)="q4Method('comedy')" [ngClass]="{ clicked: checkInterest('comedy') }"
+            class="comedy interests-btn"></button>
+          <p [ngClass]="{ highlight: checkInterest('comedy') }">Comedy</p>
         </div>
         <div>
-          <button
-            (click)="q4Method('recreation')"
-            [ngClass]="{ clicked: checkInterest('recreation') }"
-            class="recreation interests-btn"
-          ></button>
-          <p>Recreation</p>
+          <button (click)="q4Method('recreation')" [ngClass]="{ clicked: checkInterest('recreation') }"
+            class="recreation interests-btn"></button>
+          <p [ngClass]="{ highlight: checkInterest('recreation') }">
+            Recreation
+          </p>
         </div>
         <!-- <div class="empty interests-btn"></div> -->
         <div>
-          <button
-            (click)="q4Method('music')"
-            [ngClass]="{ clicked: checkInterest('music') }"
-            class="music interests-btn"
-          ></button>
-          <p>Music</p>
+          <button (click)="q4Method('music')" [ngClass]="{ clicked: checkInterest('music') }"
+            class="music interests-btn"></button>
+          <p [ngClass]="{ highlight: checkInterest('music') }">Music</p>
         </div>
       </div>
       <div>
         <p>Kid friendly:</p>
-        <i
-          class="far fa-square"
-          *ngIf="kidFriendly === 0"
-          (click)="toggleCheck()"
-        ></i>
-        <i
-          class="far fa-check-square"
-          *ngIf="kidFriendly === 1"
-          (click)="toggleCheck()"
-        ></i>
+        <i class="far fa-square" *ngIf="kidFriendly === 0" (click)="toggleCheck()"></i>
+        <i class="far fa-check-square" *ngIf="kidFriendly === 1" (click)="toggleCheck()"></i>
       </div>
       <button (click)="submitQuiz()" [disabled]="clicked === false">
         Submit

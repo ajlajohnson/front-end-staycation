@@ -21,7 +21,7 @@
         <p>{{ restaurantGoogle.result.formatted_address }}</p>
         <p>{{ restaurantGoogle.result.formatted_phone_number }}</p>
         <p>rating: {{ restaurantGoogle.result.rating }}/5</p>
-        <button (click)="addFavRest(restaurantGoogle.result)" class="heart">
+        <button (click)="addFavRest(restaurantGoogle.result)" class="heart1">
           <img src="src/assets/staycation-images/favorite.png" alt="" />
         </button>
       </div>
@@ -31,7 +31,7 @@
         <p>{{ activityGoogle[0].result.formatted_address }}</p>
         <p>{{ activityGoogle[0].result.formatted_phone_number }}</p>
         <p>rating: {{ activityGoogle[0].result.rating }}/5</p>
-        <button (click)="addFavAct(activityGoogle[0].result)" class="heart">
+        <button (click)="addFavAct(activityGoogle[0].result)" class="heart1">
           <img src="src/assets/staycation-images/favorite.png" alt="" />
         </button>
       </div>

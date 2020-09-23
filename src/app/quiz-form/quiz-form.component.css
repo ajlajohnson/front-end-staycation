@@ -18,6 +18,7 @@
 .clicked {
   background-color: #930606;
 }
+
 .city {
   align-items: center;
   font-size: 45px;
@@ -26,6 +27,7 @@
   text-shadow: 1px 1px #237970;
   text-align: center;
 }
+
 .city-q {
   display: flex;
 }
@@ -34,8 +36,8 @@
   background: url(src/assets/staycation-images/detriot.png) no-repeat;
   cursor: pointer;
   border: none;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   background-size: 100%;
 }
 
@@ -43,8 +45,8 @@
   background: url(src/assets/staycation-images/grand-rapids.png) no-repeat;
   cursor: pointer;
   border: none;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   background-size: 100%;
 }
 
@@ -60,7 +62,21 @@ p {
   font-size: 30px;
   color: #440000;
   list-style-type: none;
-  text-shadow: 1px 1px #237970;
+  text-shadow: 1px 1px #237970 ;
+}
+
+.detroit, .grand-rapids {
+  padding: 10px;
+  margin: 5px;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-radius: 50%;
+  width: 300px;
+  font-size: 30px;
+  color: #237970;
+  list-style-type: none;
+  text-shadow: 1px 1px #440000;
 }
 
 .questions1 {
@@ -156,22 +172,31 @@ p {
   height: 80px;
   background-size: 100%;
 }
+
 .interest-btn {
   flex: 1;
 }
+
 .atmosphere {
   display: flex;
   flex-direction: column;
 }
+
 .empty {
   width: 80px;
   height: 80px;
 }
+
+.highlight {
+  color: gold;
+}
+
 @media only screen and (min-width: 768px) {
   .grid {
     display: flex;
     flex-wrap: wrap;
   }
+
   /* .question {
   .list {
     display: none;
