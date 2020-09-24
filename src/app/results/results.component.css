@@ -40,7 +40,7 @@
   color: #440000;
   list-style-type: none;
   text-shadow: 1px 1px #237970;
-  font-size: 25px;
+  font-size: 30px;
   text-align: center;
 }
 
@@ -87,21 +87,37 @@ button {
   text-shadow: 1px 1px #237970;
 }
 
-.heart {
+.heart1 {
   background: url(src/assets/staycation-images/favorite.png) no-repeat;
   cursor: pointer;
   border: none;
-  bottom: 10px;
+  /* bottom: 10px; */
   width: 40px;
   height: 40px;
   background-size: 100%;
 }
 
-.heart1 {
+.heart2 {
   background: url(src/assets/staycation-images/favorite.png) no-repeat;
   cursor: pointer;
   border: none;
-  bottom: 20px;
+  width: 40px;
+  height: 40px;
+  background-size: 100%;
+}
+.heart3 {
+  background: url(src/assets/staycation-images/favorite.png) no-repeat;
+  cursor: pointer;
+  border: none;
+  width: 40px;
+  height: 40px;
+  background-size: 100%;
+
+}
+.heart4 {
+  background: url(src/assets/staycation-images/favorite.png) no-repeat;
+  cursor: pointer;
+  border: none;
   width: 40px;
   height: 40px;
   background-size: 100%;
