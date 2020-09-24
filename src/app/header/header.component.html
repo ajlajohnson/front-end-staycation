@@ -1,7 +1,10 @@
 <header class="header">
   <h1 class="logo"></h1>
+
   <div class="burger">
-    <div (click)="toggleMenu()"><i class="fas fa-bars"></i></div>
+    <div (click)="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
     <nav class="nav">
       <ul class="nav-items" *ngIf="showMenu === true">
         <li class="link"><a routerLink="/home" class="color">Home</a></li>
@@ -12,4 +15,14 @@
       </ul>
     </nav>
   </div>
+
+  <nav class="nav2">
+    <ul class="nav-items2">
+      <li class="link2"><a routerLink="/home" class="color">Home</a></li>
+      <li class="link2">
+        <a routerLink="/favorites" class="color">Favorites</a>
+      </li>
+      <li class="link2"><a routerLink="/about" class="color">About</a></li>
+    </ul>
+  </nav>
 </header>

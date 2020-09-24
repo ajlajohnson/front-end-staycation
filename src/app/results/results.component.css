@@ -1,21 +1,23 @@
 .result-background {
-  display: flex; 
+  background: linear-gradient(rgb(252, 237, 211), rgb(172, 123, 125)) no-repeat;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  height: 100vh;
-  width: 100%;
-  background-size: cover;
-  background-image: url("src/assets/staycation-images/results-background.jpg");
+  align-items: center;
 }
 
 .box {
   text-align: center;
   flex: 0 1 45%;
   height: 45%;
+  padding: 5px;
+  margin: 5px;
 }
 
 .results {
-  margin-top: 7%;
-  margin-bottom: 4.55%;
+  margin-top: 180px;
+  margin-bottom: 4%;
   padding-bottom: 2%;
   display: flex;
   flex-direction: column;
@@ -26,7 +28,8 @@
     rgba(172, 123, 125, 0.9)
   );
   border-radius: 15px;
-  width: 45%;
+  width: 90%;
+  height: 80%;
 }
 
 .grid {
@@ -34,6 +37,7 @@
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding: 2px;
 }
 
 .rec {
@@ -74,7 +78,7 @@ p {
   border: 3px solid black;
 }
 
-button {
+/* button {
   padding: 15px;
   margin: 5px;
   border-top-style: hidden;
@@ -85,13 +89,13 @@ button {
   color: #440000;
   list-style-type: none;
   text-shadow: 1px 1px #237970;
-}
+} */
 
 .heart1 {
   background: url(src/assets/staycation-images/favorite.png) no-repeat;
   cursor: pointer;
   border: none;
-  /* bottom: 10px; */
+  bottom: 10px;
   width: 40px;
   height: 40px;
   background-size: 100%;
@@ -112,7 +116,6 @@ button {
   width: 40px;
   height: 40px;
   background-size: 100%;
-
 }
 .heart4 {
   background: url(src/assets/staycation-images/favorite.png) no-repeat;
@@ -151,4 +154,26 @@ menu {
   display: flex;
 } */
 @media only screen and (min-width: 768px) {
+  .result-background {
+    background: linear-gradient(rgb(252, 237, 211), rgb(172, 123, 125))
+      no-repeat;
+    background-size: 100%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .result-background {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-image: url("src/assets/staycation-images/results-background.jpg");
+  }
+
+  .results {
+    background-image: linear-gradient(
+      rgba(252, 237, 211, 0.6),
+      rgba(172, 123, 125, 0.6)
+    );
+  }
 }
