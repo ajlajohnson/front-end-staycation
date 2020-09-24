@@ -20,16 +20,20 @@
 }
 
 .city {
-  align-items: center;
   font-size: 45px;
   color: #440000;
   list-style-type: none;
   text-shadow: 1px 1px #237970;
   text-align: center;
+  padding-top: 40%;
+  
 }
 
 .city-q {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* padding-top: 30%; */
 }
 
 .detriot-btn {
@@ -91,10 +95,50 @@ p {
   justify-content: center;
   align-items: center;
   align-content: center;
+  padding-top: 30%;
 }
 
 .tod {
   text-align: center;
+  padding-top: 40%;
+
+}
+
+.atmosphere {
+  padding-top: 20%;
+}
+
+.occasion {
+  padding-top: 40%;
+  text-align: center;
+}
+
+.interests {
+  padding-top: 60%;
+  text-align: center;
+}
+
+.question {
+  padding-top: 10%;
+  text-align :center;
+}
+
+/* .kid {
+  font-size: 20px;
+} */
+/* 
+.big, .kid, input {
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+} */
+
+.fa-square:before {
+  height: 50px;
+  width: 50px;
 }
 
 .bar {
@@ -104,6 +148,7 @@ p {
   width: 80px;
   height: 80px;
   background-size: 100%;
+
 }
 
 .sports {
@@ -123,6 +168,7 @@ p {
   width: 80px;
   height: 80px;
   background-size: 100%;
+
 }
 
 .creative {
@@ -133,6 +179,7 @@ p {
   width: 80px;
   height: 80px;
   background-size: 100%;
+
 }
 
 .education {
@@ -143,6 +190,7 @@ p {
   width: 80px;
   height: 80px;
   background-size: 100%;
+
 }
 
 .comedy {
@@ -152,6 +200,7 @@ p {
   width: 80px;
   height: 80px;
   background-size: 100%;
+
 }
 
 .recreation {
@@ -162,6 +211,7 @@ p {
   width: 80px;
   height: 80px;
   background-size: 100%;
+
 }
 
 .music {
@@ -171,6 +221,7 @@ p {
   width: 80px;
   height: 80px;
   background-size: 100%;
+
 }
 
 .interest-btn {
@@ -197,17 +248,36 @@ p {
     flex-wrap: wrap;
   }
 
-  /* .question {
-  .list {
-    display: none;
+  .city {
+    padding-top: 20%;
   }
-  .links {
-    display: none;
+
+  .city-q {
+    flex-direction: column;
+    align-items: center;
   }
+
+  .question {
+    padding-top: 0;
+    text-align: center;
+  }
+
+  .interests {
+    padding-top: 20%;
+    text-align: center;
+  }
+
+  .kid {
+    text-align: center;
+    margin: 0;
+    width: 50px;
+    border: 0;
+  }
+
 }
 
 @media only screen and (min-width: 992px) {
-  .grid {
+  /* .grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -219,5 +289,10 @@ p {
     width: 80px;
     height: 80px;
     background-size: 100%;
-  } */
+  } */ 
+
+  .city-q {
+    flex-direction: row;
+    align-items: center;
+  }
 }

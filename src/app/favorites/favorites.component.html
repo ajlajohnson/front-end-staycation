@@ -1,34 +1,34 @@
 <app-header></app-header>
 <div class="fave-background">
   <div class="main">
-    <h1>Here are your favorites places you saved!</h1>
+    <h1 class="fave">Here are your favorites places you saved!</h1>
     <div class="fave-results">
-      <div class="restaurant card">
+      <div class="restaurant card" [ngClass]="{ card: favoriteRest.length > 0}">
         <ul>
           <li *ngFor="let restaurant of favoriteRest; index as i">
-            <p>restaurant: {{ restaurant.name }}</p>
-            <p>{{ restaurant.formatted_address }}</p>
-            <p>rating: {{ restaurant.rating }}</p>
+            <p class="para">restaurant: {{ restaurant.name }}</p>
+            <p class="para">{{ restaurant.formatted_address }}</p>
+            <p class="para">rating: {{ restaurant.rating }}</p>
             <button (click)="deleteRest(i)">X</button>
           </li>
         </ul>
       </div>
-      <div class="activity card">
+      <div class="activity card" [ngClass]="{ card: favoriteAct.length > 0}">
         <ul>
           <li *ngFor="let activity of favoriteAct">
-            <p>activity: {{ activity.name }}</p>
-            <p>{{ activity.formatted_address }}</p>
-            <p>rating: {{ activity.rating }}</p>
+            <p class="para">activity: {{ activity.name }}</p>
+            <p class="para">{{ activity.formatted_address }}</p>
+            <p class="para">rating: {{ activity.rating }}</p>
             <button (click)="deleteAct(i)">X</button>
           </li>
         </ul>
       </div>
-      <div class="bar card">
+      <div class="bar card" [ngClass]="{ card: favoriteDrink.length > 0}">
         <ul>
           <li *ngFor="let drink of favoriteDrink">
-            <p>bars and coffee: {{ drink.name }}</p>
-            <p>{{ drink.formatted_address }}</p>
-            <p>rating: {{ drink.rating }}</p>
+            <p class="para">bars and coffee: {{ drink.name }}</p>
+            <p class="para">{{ drink.formatted_address }}</p>
+            <p class="para">rating: {{ drink.rating }}</p>
             <button (click)="deleteDrink(i)">X</button>
           </li>
         </ul>

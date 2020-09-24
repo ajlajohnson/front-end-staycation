@@ -2,6 +2,7 @@
   <div class="container">
     <div class="question" *ngIf="show === 1">
       <p class="city">City:</p>
+
       <div class="city-q">
         <div class="center">
           <button (click)="q1Method('d')" class="detriot-btn">
@@ -26,15 +27,15 @@
       </div>
     </div>
     <div class="question" *ngIf="show === 3">
-      <p>Occasion</p>
+      <p class="occasion">Occasion</p>
       <div class="atmosphere">
         <button (click)="q3Method(1)">Casual</button>
         <button (click)="q3Method(2)">Business-Casual</button>
         <button (click)="q3Method(3)">Formal</button>
       </div>
     </div>
-    <div class="question" *ngIf="show === 4">
-      <p>Interests</p>
+    <div class="question selection" *ngIf="show === 4">
+      <p class="interests">Interests</p>
       <div class="grid">
         <div>
           <button (click)="q4Method('bar')" [ngClass]="{ clicked: checkInterest('bar') }"
@@ -81,9 +82,9 @@
         </div>
       </div>
       <div>
-        <p>Kid friendly:</p>
-        <i class="far fa-square" *ngIf="kidFriendly === 0" (click)="toggleCheck()"></i>
-        <i class="far fa-check-square" *ngIf="kidFriendly === 1" (click)="toggleCheck()"></i>
+        <p class="kid" [ngClass]="{ highlight: kidFriendly === 1 }">kid friendly:</p>
+        <i class="far fa-square big" *ngIf="kidFriendly === 0" (click)="toggleCheck()"></i>
+        <i class="far fa-check-square big" *ngIf="kidFriendly === 1" (click)="toggleCheck()"></i>
       </div>
       <button (click)="submitQuiz()" [disabled]="clicked === false">
         Submit
