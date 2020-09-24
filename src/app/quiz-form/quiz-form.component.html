@@ -81,7 +81,7 @@
           <p [ngClass]="{ highlight: checkInterest('music') }">Music</p>
         </div>
       </div>
-      <div>
+      <div class="kid-friendly">
         <p class="kid" [ngClass]="{ highlight: kidFriendly === 1 }">kid friendly:</p>
         <i class="far fa-square big" *ngIf="kidFriendly === 0" (click)="toggleCheck()"></i>
         <i class="far fa-check-square big" *ngIf="kidFriendly === 1" (click)="toggleCheck()"></i>

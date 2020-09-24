@@ -1,7 +1,7 @@
 .fave-background {
   background: linear-gradient(rgb(252, 237, 211), rgb(172, 123, 125)) no-repeat;
   background-size: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;

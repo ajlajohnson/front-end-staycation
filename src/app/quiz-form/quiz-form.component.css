@@ -123,22 +123,9 @@ p {
   text-align :center;
 }
 
-/* .kid {
-  font-size: 20px;
-} */
-/* 
-.big, .kid, input {
-  height: 50px;
-  width: 50px;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-} */
 
-.fa-square:before {
-  height: 50px;
-  width: 50px;
+.fa-check-square, .fa-square {
+  font-size: 50px;
 }
 
 .bar {
@@ -277,22 +264,39 @@ p {
 }
 
 @media only screen and (min-width: 992px) {
-  /* .grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .interest-btn {
-    flex: 1;
-  }
-  /* .empty {
-    width: 80px;
-    height: 80px;
-    background-size: 100%;
-  } */ 
+ 
 
   .city-q {
     flex-direction: row;
     align-items: center;
   }
+
+  .kid-friendly {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .kid {
+    margin-right: 20px;
+  }
+
+  .fa-square, .fa-check-square {
+    margin-left: 150px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+  }
+
+  .interests {
+    display: flex;
+    justify-content: center;
+    padding-left: 43%;
+    padding: 10px;
+  }
+
 }
