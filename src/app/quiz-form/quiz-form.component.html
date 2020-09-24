@@ -35,42 +35,42 @@
       </div>
     </div>
     <div class="question selection" *ngIf="show === 4">
-      <p class="interests">Interests</p>
+      <p class="interests  white">Interests</p>
       <div class="grid">
         <div>
           <button (click)="q4Method('bar')" [ngClass]="{ clicked: checkInterest('bar') }"
             class="bar interests-btn"></button>
-          <p [ngClass]="{ highlight: checkInterest('bar') }">Bar</p>
+          <p [ngClass]="{ highlight: checkInterest('bar') }" class="words">Bar</p>
         </div>
         <div>
           <button (click)="q4Method('sports')" [ngClass]="{ clicked: checkInterest('sports') }"
             class="sports interests-btn"></button>
-          <p [ngClass]="{ highlight: checkInterest('sports') }">Sports</p>
+          <p [ngClass]="{ highlight: checkInterest('sports') }" class="words">Sports</p>
         </div>
         <div>
           <button (click)="q4Method('nightlife')" [ngClass]="{ clicked: checkInterest('nightlife') }"
             class="nightlife interests-btn"></button>
-          <p [ngClass]="{ highlight: checkInterest('nightlife') }">Nightlife</p>
+          <p [ngClass]="{ highlight: checkInterest('nightlife') }" class="words">Nightlife</p>
         </div>
         <div>
           <button (click)="q4Method('creative')" [ngClass]="{ clicked: checkInterest('creative') }"
             class="creative interests-btn"></button>
-          <p [ngClass]="{ highlight: checkInterest('creative') }">Creative</p>
+          <p [ngClass]="{ highlight: checkInterest('creative') }" class="words">Creative</p>
         </div>
         <div>
           <button (click)="q4Method('education')" [ngClass]="{ clicked: checkInterest('education') }"
             class="education"></button>
-          <p [ngClass]="{ highlight: checkInterest('education') }">Education</p>
+          <p [ngClass]="{ highlight: checkInterest('education') }" class="words">Education</p>
         </div>
         <div>
           <button (click)="q4Method('comedy')" [ngClass]="{ clicked: checkInterest('comedy') }"
             class="comedy interests-btn"></button>
-          <p [ngClass]="{ highlight: checkInterest('comedy') }">Comedy</p>
+          <p [ngClass]="{ highlight: checkInterest('comedy') }" class="words">Comedy</p>
         </div>
         <div>
           <button (click)="q4Method('recreation')" [ngClass]="{ clicked: checkInterest('recreation') }"
             class="recreation interests-btn"></button>
-          <p [ngClass]="{ highlight: checkInterest('recreation') }">
+          <p [ngClass]="{ highlight: checkInterest('recreation') }" class="words">
             Recreation
           </p>
         </div>
@@ -78,11 +78,11 @@
         <div>
           <button (click)="q4Method('music')" [ngClass]="{ clicked: checkInterest('music') }"
             class="music interests-btn"></button>
-          <p [ngClass]="{ highlight: checkInterest('music') }">Music</p>
+          <p [ngClass]="{ highlight: checkInterest('music') }" class="words">Music</p>
         </div>
       </div>
       <div class="kid-friendly">
-        <p class="kid" [ngClass]="{ highlight: kidFriendly === 1 }">kid friendly:</p>
+        <p class="kid" [ngClass]="{ highlight: kidFriendly === 1 }" class="words">kid friendly:</p>
         <i class="far fa-square big" *ngIf="kidFriendly === 0" (click)="toggleCheck()"></i>
         <i class="far fa-check-square big" *ngIf="kidFriendly === 1" (click)="toggleCheck()"></i>
       </div>

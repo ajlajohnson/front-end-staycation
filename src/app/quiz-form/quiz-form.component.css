@@ -21,12 +21,13 @@
 
 .city {
   font-size: 45px;
-  color: #440000;
+  /* color: #440000; */
   list-style-type: none;
-  text-shadow: 1px 1px #237970;
+  /* text-shadow: 1px 1px #237970; */
   text-align: center;
   padding-top: 40%;
-  
+  color:   #c6e3e0;
+  text-shadow: 1px 1px #440000;
 }
 
 .city-q {
@@ -54,8 +55,23 @@
   background-size: 100%;
 }
 
-button,
 p {
+  padding: 10px;
+  margin: 5px;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-radius: 50%;
+  width: 300px;
+  font-size: 30px;
+  /* color: #440000; */
+  list-style-type: none;
+  /* text-shadow: 1px 1px #237970 ; */
+  color:   #c6e3e0;
+  text-shadow: 1px 1px #440000;
+}
+
+button {
   padding: 10px;
   margin: 5px;
   border-top-style: hidden;
@@ -78,8 +94,10 @@ p {
   border-radius: 50%;
   width: 300px;
   font-size: 30px;
-  color: #237970;
+  /* color: #237970; */
   list-style-type: none;
+  /* text-shadow: 1px 1px #440000; */
+  color:   #c6e3e0;
   text-shadow: 1px 1px #440000;
 }
 
@@ -116,6 +134,17 @@ p {
 .interests {
   padding-top: 60%;
   text-align: center;
+}
+
+.words {
+  color:   #c6e3e0;
+  list-style-type: none;
+  text-shadow: 1px 1px #440000;
+}
+
+.white {
+  color:   #c6e3e0;
+  text-shadow: 1px 1px #440000;
 }
 
 .question {
@@ -253,6 +282,7 @@ p {
     padding-top: 20%;
     text-align: center;
   }
+  
 
   .kid {
     text-align: center;
@@ -296,7 +326,8 @@ p {
     display: flex;
     justify-content: center;
     padding-left: 43%;
-    padding: 10px;
+    padding-top: 20%;
   }
 
+  
 }

@@ -1,11 +1,10 @@
 .fave-background {
   background: linear-gradient(rgb(252, 237, 211), rgb(172, 123, 125)) no-repeat;
-  background-size: 100%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
 .main {
@@ -22,6 +21,7 @@
   display: flex;
   flex-direction: column;
   margin-top: 160px;
+  overflow-y: auto;
 }
 
 .fave {
@@ -78,12 +78,17 @@ button {
 }
 @media only screen and (min-width: 992px) {
   .fave-background {
-    display: flex;
+    /* display: flex; */
     background-size: 100%;
     background-size: cover;
     width: auto;
     background: url("src/assets/staycation-images/favorites-background.jpg");
     background-size: 100%;
+    height: 100vh;
+  }
+
+  .main {
+    overflow-y: auto;
   }
 }
 /* 
